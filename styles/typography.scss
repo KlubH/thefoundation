@@ -1,0 +1,37 @@
+/* 
+  Regular  "ff-tisa-web-pro" 400 normal 
+  Bold  "ff-tisa-web-pro" 700 normal  
+  Regular "proxima-nova"  400 normal  
+  Semi-Bold  "proxima-nova"  600 normal 
+*/
+
+body {
+  font-family: $sansSerif;
+}
+
+h1, h2, h3, h4 {
+  font-family: $serif;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 1.33;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-size: 25px;
+  line-height: 1.33;
+  margin-bottom: 25px;
+}
+
+h4 {
+  font-size: 25px;
+  line-height: 1.33;
+  margin-bottom: 20px;
+}
