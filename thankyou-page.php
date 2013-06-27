@@ -10,12 +10,13 @@ Template Name: Thank You Page
 </header>
 
 <div class="container scroll-page row application">
-
-  <h1 class="center">Confirm The Application In Your Email Now</h1>
-  <ol class="application-steps">
+  <ol class="application-steps second-step">
     <li>Apply</li>
     <li class="active">Confirm &amp; Await Approval</li>
   </ol>
+
+  <h1 class="center">You are Almost Done.</h1>
+  <h2 class="center">Check Your Email Now To Confirm Your Application</h2>
 
   <div class="row">
 
