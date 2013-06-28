@@ -12,6 +12,7 @@
   <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/styles/main.css" />  
   <script type="text/javascript"src="<?php echo get_template_directory_uri(); ?>/scripts/modernizr.js"></script>
+  <script type="text/javascript"src="<?php echo get_template_directory_uri(); ?>/scripts/cookie.js"></script>
   <!--[if (gte IE 6)&(lte IE 8)]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <script type="text/javascript"src="<?php echo get_template_directory_uri(); ?>/scripts/selectivizr.min.js"></script>
@@ -38,6 +39,18 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
   ga('send', 'pageview');
 
 </script>
+
 </head>
 
 <body <?php body_class(); ?>>
+<?php  echo '
+    <form name="frm" id="frm" action="' . get_site_url() . '/welcome" method="post">
+      <input type="hidden" name="url" value="'.get_permalink().'">
+      <input type="hidden" name="title" value="'.get_the_title().'">
+    </form>';
+    if (is_single()) {
+
+      echo '<script type="text/javascript">
+        processCookie();
+      </script>';
+    } ?>

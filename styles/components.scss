@@ -230,7 +230,7 @@
   &.sidebar-optin .moonray-form-input-type-email {
     float: none;
   }
-  .moonray-form-input-type-submit {
+  .moonray-form-input-type-submit, .moonray-form-input-type-image {
     float: right;
   }
 }
@@ -342,9 +342,10 @@ margin-right: 20px;
 }
 
 .tour-content {
-  h2 {
+  .intro h2 {
     background: transparent;
     margin-top: 0;
+    padding-top: 0;
   }
 
 }
@@ -1145,6 +1146,62 @@ iframe {
   }
   li {
     margin-bottom: 40px;
+  }
+}
+
+.welcomegate-header {
+  background: #000;
+  padding: 25px 0;
+  p {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .logo-inverse {
+    padding-top: 10px;
+  }
+}
+
+.welcomegate-content {
+  padding-top: 40px;
+  p {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+}
+
+.welcomegate-optin {
+  margin-top: 40px;
+  .home-optin {
+    p {
+      width: auto;
+      text-align: center;
+    }
+  }
+  .skip {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom:50px;
+    font-weight: 600;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.welcomegate-testimonials {
+  .testimonial {
+    background: #eeeeee;
+    color: #000;
+    &:after {
+      border-color: #eeeeee transparent transparent transparent
+    }
+  }
+}
+
+.partners {
+  iframe {
+    margin-bottom: 30px;
   }
 }
 

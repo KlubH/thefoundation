@@ -5,7 +5,7 @@ Template Name: Tour Page
 ?>
 <?php get_header(); ?>
 
-<header class="site-header home-mobile-nav">
+<header class="site-header fixed-top">
   <?php get_template_part( 'nav' ); ?>
 </header>
 
@@ -26,12 +26,8 @@ Template Name: Tour Page
       <?php endif; ?>
 
 
-    <div class="home-nav" id="js-header">
-      <?php get_template_part( 'nav' ); ?>
-    </div> 
-
     <!-- @component HOME CONTENT -->
-    <section class="home-content tour-content">
+    <section class="home-content tour-content scroll-page">
       <div class="container text">               
         
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post();  ?>

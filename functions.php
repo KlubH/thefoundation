@@ -289,5 +289,9 @@
           return $html;
   }
 
+/* ends welcome gate */
+
+
+
 
 ?>

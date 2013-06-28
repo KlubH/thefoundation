@@ -202,6 +202,28 @@ function cmb_sample_metaboxes( array $meta_boxes ) {
     )
   );
 
+   $meta_boxes[] = array(
+    'id'         => 'Partner page Fields',
+    'title'      => 'Partner',
+    'pages'      => array( 'page', ), // Post type
+    'show_on'    => array( 'key' => 'page-template', 'value' => array('partner-page.php' )),
+    'context'    => 'normal',
+    'priority'   => 'low',
+    'show_names' => true, // Show field names on the left
+    'fields'     => array(
+      array(
+        'name' => 'Video Embed Code',
+        'desc' => 'Embed link copied from Wistia or other host. Should start with &lt;iframe&gt;',
+        'id'   => $prefix . 'partner_video_embed',
+        'type' => 'textarea_code'
+        ),
+      array(
+        'name' => 'Partner Logos',
+        'id'   => $prefix . 'partner_logos',
+        'type' => 'file'
+        )
+      )
+    );
 
   $meta_boxes[] = array(
     'id'         => 'Podcast Fields',
