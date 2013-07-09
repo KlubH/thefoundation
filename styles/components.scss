@@ -1,5 +1,16 @@
 .scroll-page {
   padding-top: 150px;
+  &.sub-nav {
+    padding-top: 100px;
+  }
+}
+
+.sub-nav {
+  padding-bottom: 60px;
+  .btn-red {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
 }
 
 /*-- @component SITE HEADER --*/
@@ -514,6 +525,10 @@ margin-right: 20px;
 
 .comment-count {
   margin-bottom: 25px;
+  color: #d72828;
+  font-size: 16px;
+  background: url("../images/comment_bubble.png") no-repeat left center;
+  padding-left: 25px;
 }
 
 /*-- @component PREVIEW --*/
@@ -739,7 +754,7 @@ margin-right: 20px;
       margin-bottom: 20px;
     }
     form {
-      padding-bottom: 0;
+      //padding-bottom: 0;
     }
     .moonray-form-input-type-submit {
       float: none;
@@ -752,6 +767,13 @@ margin-right: 20px;
     }
     .moonray-form-input-type-email {
       width: 100%;
+    }
+    .moonray-form .moonray-form-element-wrapper-contracted {
+      width: 100%;
+      input[type="submit"] {
+        width: 100%!important;
+        margin-top: 20px;
+      }
     }
     
   }
@@ -1134,6 +1156,20 @@ iframe {
   }
 }
 
+.application-aside {
+  background:#f2f2f2;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 47px;
+  .testimonial {
+    background:#D4D4D4;
+    color: #000;
+    &:after {
+      border-color: #D4D4D4 transparent transparent transparent;
+    }
+  }
+}
+
 .action-guides {
   margin-top: 40px;
   list-style: none;
@@ -1178,18 +1214,20 @@ iframe {
       text-align: center;
     }
   }
-  .skip {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom:50px;
-    font-weight: 600;
-    a {
-      text-decoration: none;
-    }
+}
+
+.skip {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom:50px;
+  font-weight: 600;
+  a {
+    text-decoration: none;
   }
 }
 
 .welcomegate-testimonials {
+  margin-top: 50px;
   .testimonial {
     background: #eeeeee;
     color: #000;
@@ -1202,6 +1240,35 @@ iframe {
 .partners {
   iframe {
     margin-bottom: 30px;
+  }
+}
+
+.partners-form {
+  margin-top: 50px;
+  form {
+    width: 50%;
+    margin: 50px auto;
+  }
+  input[type="text"], textarea {
+    @extend %styled-input;
+    border: 1px solid #32810B!important;
+    width: 100%!important;
+    padding: 15px 20px!important;
+    font-family: inherit;
+    line-height: inherit;
+    &.error {
+      border:1px solid red!important
+    }
+  }
+  div.moonray_forms input[type="submit"] {
+    @extend .btn-red;
+    display: block;
+    width: 100%;
+    background:#fa4646;
+    background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#fa4646), to(#a70000));
+    background-image:-webkit-linear-gradient(#fa4646 0%, #a70000 100%);
+    background-image:-moz-linear-gradient(#fa4646 0%, #a70000 100%);
+    background-image:linear-gradient(#fa4646 0%, #a70000 100%); 
   }
 }
 
@@ -1219,4 +1286,12 @@ iframe {
 
 .moonray-form-p2c7381f36 > p {
   display: none;
+}
+
+.fb-count-share {
+  display: inline-block;
+  text-indent: -9999px;
+  background:url(../images/fbshare.png) no-repeat top left;
+  width: 60px;
+  height: 22px;
 }

@@ -7,6 +7,9 @@
 
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript">
+var templateDir = "<?php bloginfo('template_directory') ?>";
+</script>
   <script type="text/javascript" src="//use.typekit.net/xlc6nxv.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />

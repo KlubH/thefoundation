@@ -75,9 +75,7 @@ $url_r=str_replace("http://","",$url);
 
 <?php }} ?>
 
-<p class="skip">
-	or you can <a href="<?php echo $url; ?>">Skip this step &rarr;</a>
-</p>
+
 </div>
 
 <div class="container welcomegate-testimonials">
@@ -108,7 +106,9 @@ $url_r=str_replace("http://","",$url);
 
   <?php }} ?>
 </div>
-
+<p class="skip">
+	or you can <a href="<?php echo $url; ?>">Skip this step &rarr;</a>
+</p>
 </div>
 
 <?php get_footer(); ?>

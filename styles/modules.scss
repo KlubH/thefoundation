@@ -314,6 +314,9 @@ ul.socialcount {
     background-image: -o-linear-gradient(bottom, #354a81 0%, #4c69b2 100%);
     background-image: linear-gradient(bottom, #354a81 0%, #4c69b2 100%);
   }
+  .facebook-share {
+    @extend .facebook;
+  }
   .twitter {
     text-shadow: 0 1px 0 #2d4582;
     border: 1px solid #0085b2;
@@ -333,6 +336,11 @@ ul.socialcount {
     background-image: -moz-linear-gradient(bottom, #b73823 0%, #d34127 100%);
     background-image: -o-linear-gradient(bottom, #b73823 0%, #d34127 100%);
     background-image: linear-gradient(bottom, #b73823 0%, #d34127 100%);
+  }
+  .icon-facebook-share {
+    background-image: url("../images/facebook-share.png");
+    width: 16px;
+    height: 16px;
   }
 }
 

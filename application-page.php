@@ -32,13 +32,39 @@ Template Name: Application Page
    
       </div>  
 
-    <div class="grid-narrow text">
-      <div class="lead"><p>You'll Learn How To Build A Profitable, Recurring Revenue Web Based Product In 6 Months... Even If You Don't Have Any Ideas Or Development Experience.</p></div>
-      <p>Limited membership. Not everyone will be accepted. The group will last for 6 months. As a group, we will share the best practices for building a software product from scratch, getting it to 6 figures, and doing it without any outside funding.</p> 
-      <p>I've built 6 profitable web based products from scratch, without any outside funding. This is what I want to share. How I did it. If you're a veteran, all the better. All skill levels are welcome to apply. 
-      <p>The friendships you form in this group will last you an entire lifetime :-)</p> 
-      <p>There is a fee to join. Apply on the left to see if you've got what it takes.</p>
-      <p>Your current situation is not important. If you have the mindset, this can be done.</p>
+    <div class="grid-narrow text application-aside">
+      <h3>Location</h3>
+      <p>Take The Foundation virtually from anywhere in the world</p>
+      <img src="<?php echo get_bloginfo('template_directory'); ?>/images/globe.png" alt="">
+      <h3>Community</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, modi, dignissimos, ad dicta distinctio ea soluta reprehenderit magnam explicabo debitis libero repellendus atque vitae quasi ipsam cumque a. Nihil, doloremque.</p>
+      <h3>Starting from Nothing</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, fuga, cumque nostrum error quo explicabo dolore voluptatem odit et a ullam esse similique velit repellat aliquid reiciendis voluptas facere voluptatum!</p>
+      <h3>Expert Coaches</h3>
+      <h3>Testimonials</h3>
+     <div class="testimonials">
+        <?php
+        $home_args3 = array(
+          'post_type' => 'testimonial', 
+          'posts_per_page' => '3'
+        );
+        $testimonials = new WP_Query($home_args3);
+        if ($testimonials->have_posts()) {while ($testimonials->have_posts()) {$testimonials->the_post();
+          $testimonial_content = get_post_meta( $post->ID, '_cmb_testimonial_quote', true );
+          $testimonial_source_name = get_post_meta( $post->ID, '_cmb_testimonial_source_name', true );
+          $testimonial_source_title = get_post_meta( $post->ID, '_cmb_testimonial_source_title', true );
+      ?>
+        <div class="testimonial">
+          <blockquote><?php echo $testimonial_content; ?></blockquote>
+          <cite>
+            <strong><?php echo $testimonial_source_name; ?></strong>
+            <?php echo $testimonial_source_title; ?>
+          </cite>
+        </div>
+        <div class="bordered-image"><?php the_post_thumbnail('testimonial'); ?></div>
+    <?php }} ?>
+     </div>
+
     </div>
   </div>
 

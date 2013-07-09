@@ -43,6 +43,12 @@ Template Name: Home Page New
 
     <!-- @module SOCIALCOUNT -->
 <?php 
+
+  $start_shares = 4386;
+  $start_likes = 334;
+  $start_tweets = 203;
+  $start_plusses = 83;
+
   function get_tweets($url) {
     $json_string = file_get_contents('http://urls.api.twitter.com/1/urls/count.json?url=' . $url);
     $json = json_decode($json_string, true);
@@ -60,9 +66,9 @@ Template Name: Home Page New
   }
   function get_plusones($url) {           
     $curl = curl_init();
-    curl_setopt($curl, CURLOPT_URL, "https://clients6.google.com/rpc?key=AIzaSyCjaMonKV5YxEAVCapNUQ2j_tlhh4SErpw");
+    curl_setopt($curl, CURLOPT_URL, "https://clients6.google.com/rpc?key=AIzaSyCKSbrvQasunBoV16zDH9R33D88CeLr9gQ");
     curl_setopt($curl, CURLOPT_POST, 1);
-    curl_setopt($curl, CURLOPT_POSTFIELDS, '[{"method":"pos.plusones.get","id":"p","params":{"nolog":true,"id":"' . $url . '","source":"widget","userId":"@viewer","groupId":"@self"},"jsonrpc":"2.0","key":"p","apiVersion":"v1"}]');
+    curl_setopt($curl, CURLOPT_POSTFIELDS, '[{"method":"pos.plusones.get","id":"p","params":{"nolog":true,"id":"http://thefoundation.com","source":"widget","userId":"@viewer","groupId":"@self"},"jsonrpc":"2.0","key":"p","apiVersion":"v1"}]');
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-type: application/json'));
     $curl_results = curl_exec ($curl);
@@ -71,12 +77,14 @@ Template Name: Home Page New
     return intval( $json[0]['result']['metadata']['globalCounts']['count'] );
   }
 
-  $link = "http://thefoundation.io"; 
-  $page = "thefoundation.io";
-  $shares = get_shares($link);
-  $likes = get_likes($page);
-  $tweets = get_tweets($link);
-  $plusones = get_plusones($link);
+  $link = get_permalink(); 
+  $page = "thefoundation.com";
+
+  $shares = get_shares($link) + $start_shares;
+  $likes = get_likes($page) + $start_likes;
+  $tweets = get_tweets($link) + $start_tweets;
+  $plusones = get_plusones($link) + $start_plusses;
+
   if ($likes < 1) {$likes = "Like";}
   if ($tweets < 1) {$tweets = "Tweet";}
   if ($plusones < 1) {$plusones = "+1";}
