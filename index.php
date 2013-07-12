@@ -13,7 +13,7 @@
       <!-- @component BLOG | @component POST -->    
       <article class="post blog-post">
         <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-        <p class="comment-count"><?php comments_number( 'no comments', 'one comment', '% comments' ); ?></p>
+        <p class="comment-count"><a href="<?php echo get_comments_link(); ?>"><?php comments_number( 'no comments', 'one comment', '% comments' ); ?></a></p>
         <div class="text">
           <?php the_content(""); ?>
         </div>
