@@ -78,7 +78,7 @@ $url_r=str_replace("http://","",$url);
 
 </div>
 
-<div class="container welcomegate-testimonials">
+<div class="container welcomegate-testimonials landing-testimonials">
 	<!-- @component TESTIMONIALS -->
 <div class="row testimonials">            
 <?php

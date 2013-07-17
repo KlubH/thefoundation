@@ -10,11 +10,11 @@
       <!-- title of article -->
       <title>Landing Page (test)</title>
       <!-- absolute URI to article -->
-      <link>http://thefoundation.com/landing-page-test</link>
+      <link>http://thefoundation.com/landing-page-test/</link>
       <!-- body of the page or post; use cdata; html allowed (though will be formatted to DISQUS specs) -->
       <content:encoded><![CDATA[]]></content:encoded>
       <!-- value used within disqus_identifier; usually internal identifier of article -->
-      <dsq:thread_identifier>1439738247</dsq:thread_identifier>
+      <dsq:thread_identifier>557 http://thefoundation.com/?page_id=557</dsq:thread_identifier>
       <!-- creation date of thread (article), in GMT. Must be YYYY-MM-DD HH:MM:SS 24-hour format. -->
       <wp:post_date_gmt>2010-09-20 09:13:44</wp:post_date_gmt>
       <!-- open/closed values are acceptable -->
@@ -216,7 +216,7 @@
          	<wp:comment_id>10151124062359085</wp:comment_id>
            <wp:comment_author>Andy Drish</wp:comment_author>               
             <wp:comment_parent>10151100306864085_24862680</wp:comment_parent>
-            <wp:comment_content><![CDATA[\u0040jason - i think that's a testament that long copy/videos still work...  IF the content is exciting, interesting and something people haven't heard before.  \n\nWe probably spent 100-150 hours writing the script for it.   Totally worth it. :) ]]></wp:comment_content>
+            <wp:comment_content><![CDATA[jason - i think that's a testament that long copy/videos still work...  IF the content is exciting, interesting and something people haven't heard before.   We probably spent 100-150 hours writing the script for it.   Totally worth it. :) ]]></wp:comment_content>
             <wp:comment_date_gmt>2012-07-24 20:51:1</wp:comment_date_gmt>
          </wp:comment>
 
@@ -370,7 +370,7 @@
          <wp:comment_id>10151139896069085</wp:comment_id>
            <wp:comment_author>Shawn Mahdavi</wp:comment_author>               
             <wp:comment_parent>10151100306864085_24951797</wp:comment_parent>
-            <wp:comment_content><![CDATA[\u0040[100001639963407:2048:Frank], \u0040[16916986:2048:Dane] is a badass!]]></wp:comment_content>
+            <wp:comment_content><![CDATA[[100001639963407:2048:Frank], [16916986:2048:Dane] is a badass!]]></wp:comment_content>
             <wp:comment_date_gmt>2012-08-01 01:31:3</wp:comment_date_gmt>
          </wp:comment>
          <wp:comment>
@@ -419,14 +419,14 @@
             <wp:comment_id>10151141960384085</wp:comment_id>
            <wp:comment_author>Andy Drish</wp:comment_author>               
             <wp:comment_parent>10151100306864085_24951797</wp:comment_parent>
-            <wp:comment_content><![CDATA[bahaha \u0040[16916986:2048:Dane Maxwell] - i remember sitting at your place listening to origin stories about hometown boy makes good, reluctant hero etc with the tomato examples....   hard to believe that was only like three years ago. ]]></wp:comment_content>
+            <wp:comment_content><![CDATA[bahaha [16916986:2048:Dane Maxwell] - i remember sitting at your place listening to origin stories about hometown boy makes good, reluctant hero etc with the tomato examples....   hard to believe that was only like three years ago. ]]></wp:comment_content>
             <wp:comment_date_gmt>2012-08-01 22:03:5</wp:comment_date_gmt>
          </wp:comment>
          <wp:comment>
             <wp:comment_id>10151142007459085</wp:comment_id>
            <wp:comment_author>Leo Goykhman</wp:comment_author>               
             <wp:comment_parent>10151100306864085_24951797</wp:comment_parent>
-            <wp:comment_content><![CDATA[\u0040dane  did u create that lander?]]></wp:comment_content>
+            <wp:comment_content><![CDATA[dane  did u create that lander?]]></wp:comment_content>
       
    		</wp:comment>
    		<wp:comment>
@@ -454,7 +454,7 @@
        		<wp:comment_id>10151140002999085</wp:comment_id>
            <wp:comment_author>Justin Brooke</wp:comment_author>               
             <wp:comment_parent>10151100306864085_24952017</wp:comment_parent>
-            <wp:comment_content><![CDATA[I loved the video but hated that after opting-in the case study was not there. Said wasn't going to be live till 2nd week of August?\n\nThat was a bummer]]></wp:comment_content>
+            <wp:comment_content><![CDATA[I loved the video but hated that after opting-in the case study was not there. Said wasn't going to be live till 2nd week of August? That was a bummer]]></wp:comment_content>
             <wp:comment_date_gmt>2012-08-01 02:42:5</wp:comment_date_gmt>
          </wp:comment>
          <wp:comment>

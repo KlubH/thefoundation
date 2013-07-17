@@ -33,15 +33,15 @@ Template Name: Application Page
       </div>  
 
     <div class="grid-narrow text application-aside">
-      <h3>Location</h3>
-      <p>Take The Foundation virtually from anywhere in the world</p>
       <img src="<?php echo get_bloginfo('template_directory'); ?>/images/globe.png" alt="">
+      <p class="center">Our Students</p>
       <h3>Community</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, modi, dignissimos, ad dicta distinctio ea soluta reprehenderit magnam explicabo debitis libero repellendus atque vitae quasi ipsam cumque a. Nihil, doloremque.</p>
+      <p>Lonely entrepreneur isn't possible inside The Foundation. Students end up becoming best friends, holding live events, and supporting the ha-ell out of each other. You can move through all of the ups and downs of starting a business. Together.</p>
       <h3>Starting from Nothing</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, fuga, cumque nostrum error quo explicabo dolore voluptatem odit et a ullam esse similique velit repellat aliquid reiciendis voluptas facere voluptatum!</p>
+      <p>No idea? No money? No credibility? No product creation experience? Notta problem son! We create companies out of thin air, and show you how.</p> 
       <h3>Expert Coaches</h3>
-      <h3>Testimonials</h3>
+      <p>Not just any coach. Our expert coaches all have vetted business with paying customers. Many entrepreneurs are stuck with blind spots and need a second perspective. Get live help when you need it.</p>
+      <h3>Trusted By Industry Experts</h3>
      <div class="testimonials">
         <?php
         $home_args3 = array(

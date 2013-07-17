@@ -469,7 +469,7 @@ ul.socialcount {
     background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#354a81), to(#4c69b2));
     background-image: -webkit-linear-gradient(bottom, #354a81 0%, #4c69b2 100%);
     background-image: -moz-linear-gradient(bottom, #354a81 0%, #4c69b2 100%);
-    background-image: -o-linear-gradient(bottom, #354a81 0%, #4c69b2 100%);
+    backyeaground-image: -o-linear-gradient(bottom, #354a81 0%, #4c69b2 100%);
     background-image: linear-gradient(bottom, #354a81 0%, #4c69b2 100%); }
   ul.socialcount .twitter {
     text-shadow: 0 1px 0 #2d4582;
@@ -492,7 +492,8 @@ ul.socialcount {
   ul.socialcount .icon-facebook-share {
     background-image: url("../images/facebook-share.png");
     width: 16px;
-    height: 16px; }
+    height: 16px;
+    margin-top: -4px; }
 
 .home-social ul.socialcount {
   margin-top: 0; }
@@ -549,6 +550,8 @@ ul.socialcount {
 .site-header {
   border-bottom: 1px solid #dddddd;
   margin-bottom: 70px; }
+  .site-header.scroll-nav {
+    margin-bottom: 0; }
 
 .page-template-home-page-php .scroll-page {
   padding-top: 40px; }
@@ -724,7 +727,7 @@ ul.socialcount {
 
 .video-optin {
   max-width: 920px;
-  margin: 0px auto 50px auto;
+  margin: 0px auto 20px auto;
   background-color: #fffdf1;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   border-radius: 0 0 10px 10px;
@@ -783,10 +786,12 @@ ul.socialcount {
     margin-top: 70px;
     padding-top: 70px;
     background: url("../images/sep.png") no-repeat center top; }
-  .home-content .intro p {
-    margin: 0 auto 40px auto;
-    width: 60%;
-    color: #888; }
+  .home-content .intro {
+    margin-top: 50px; }
+    .home-content .intro p {
+      margin: 0 auto 40px auto;
+      width: 60%;
+      color: #888; }
 
 .tour-content .intro h2 {
   background: transparent;
@@ -1410,12 +1415,12 @@ iframe {
   .skip a {
     text-decoration: none; }
 
-.welcomegate-testimonials {
+.landing-testimonials {
   margin-top: 50px; }
-  .welcomegate-testimonials .testimonial {
+  .landing-testimonials .testimonial {
     background: #eeeeee;
     color: #000; }
-    .welcomegate-testimonials .testimonial:after {
+    .landing-testimonials .testimonial:after {
       border-color: #eeeeee transparent transparent transparent; }
 
 .partners iframe {

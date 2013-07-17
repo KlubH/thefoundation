@@ -311,7 +311,7 @@ ul.socialcount {
     background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#354a81), to(#4c69b2));
     background-image: -webkit-linear-gradient(bottom, #354a81 0%, #4c69b2 100%);
     background-image: -moz-linear-gradient(bottom, #354a81 0%, #4c69b2 100%);
-    background-image: -o-linear-gradient(bottom, #354a81 0%, #4c69b2 100%);
+    backyeaground-image: -o-linear-gradient(bottom, #354a81 0%, #4c69b2 100%);
     background-image: linear-gradient(bottom, #354a81 0%, #4c69b2 100%);
   }
   .facebook-share {
@@ -341,6 +341,7 @@ ul.socialcount {
     background-image: url("../images/facebook-share.png");
     width: 16px;
     height: 16px;
+    margin-top: -4px;
   }
 }
 

@@ -5,7 +5,7 @@ Template Name: Home Page New
 ?>
 <?php get_header(); ?>
 
-<header class="site-header fixed-top">
+<header class="site-header scroll-nav">
   <?php get_template_part( 'nav' ); ?>
 </header>
 
@@ -21,7 +21,7 @@ Template Name: Home Page New
     ?>
 
     <!-- @component SITE HEADER | @component HERO -->
-    <section class="hero container scroll-page">
+    <section class="hero container">
       <div class="row">
           <h1><?php echo $hero_text; ?></h1>          
         <!-- @component DISCOVER VIDEO -->
@@ -108,7 +108,7 @@ Template Name: Home Page New
   </section>
   <div class="grid-narrow">
     <!-- @component TESTIMONIALS -->
-<div class="row testimonials">            
+<div class="row testimonials landing-testimonials">            
 <?php
     $home_args3 = array(
       'post_type' => 'testimonial', 

@@ -28,6 +28,13 @@ Template Name: Tour Page
 
     <!-- @component HOME CONTENT -->
     <section class="home-content tour-content scroll-page">
+    <section class="hero container">
+      
+
+     <div id="video-modal">
+         <?php echo $hero_video_link; ?>
+     </div>
+
       <div class="container text">               
         
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post();  ?>
