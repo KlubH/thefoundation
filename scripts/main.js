@@ -17,7 +17,7 @@ var TF = (function(){
     },
 
     checkPage: function(){
-      if (($j("body").hasClass("home")) || ($j("body").hasClass("page-template-home-page-alt-php"))) {
+      if (($j("body").hasClass("home")) || ($j("body").hasClass("page-template-home-page-alt-php")) || $j("body").hasClass("page-template-home-page-old-php")) {
         curPage = "home";
       } else {
         curPage = "other";

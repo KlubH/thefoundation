@@ -12,6 +12,7 @@ Template Name: Application Page
 <div class="container scroll-page row application">
 
   <h1 class="center">Apply to Become a Member of The Foundation</h1>
+  <h2 class="center">Build A Profitable Web Company In 6 Months Even If You Have No Idea What To Start Or How To Code</h2>
   <ol class="application-steps">
     <li class="active">Apply</li>
     <li>Confirm &amp; Await Approval</li>

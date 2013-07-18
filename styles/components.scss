@@ -1017,8 +1017,15 @@ iframe {
 /*-- @component APPLICATION PAGE --*/
 
 .application {
-  .row {
-    margin-top: 65px;
+  padding-top: 110px;
+  h2 {
+    font-size: 20px;
+    color: #888888;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    font-family: $serif;
+    font-weight: 400;
+    margin-top: 40px;
   }
 }
 
@@ -1079,30 +1086,32 @@ iframe {
   box-shadow: 0 1px 5px rgba(0,0,0,.25);
   border-radius: 10px;
   padding: 50px 20px 20px 20px;
-  font-family: $serif;
   position: relative;
+  @extend .text;
   &:before {
     background:url("../images/apply-arrow.png") no-repeat top right;
     content: "";
     width: 96px;
     height: 92px;
     position: absolute;    
-    left: 145px;
-    top: -30px;
+    left: 113px;
+    top: -54px;
   }
 
   p {
-    margin-bottom: 50px;
-    line-height: 1.8;
-    font-size: 20px;
+    margin-bottom: 40px;
     &:first-child {
       label {
         display: block;
       }
       input[type="text"] {
-        width: 44%;        
+        width: 46%;        
         margin-bottom: 10px;
         margin-right: 3%;
+      }
+      input[name="lastname"] {
+        margin-right: 0;
+        margin-left: 3%;
       }
       input[type="email"] {
         width: 92%;
@@ -1118,15 +1127,7 @@ iframe {
       outline: none;
     }
   }
-  input:not([type=submit]):not([type=image]) {
-    background:transparent;
-    border: none;
-    margin: 0;
-    padding: 0 ;
-    line-height: inherit;
-    border-bottom: 1px solid darken(#E5E5E5, 10%);    
-    margin-top: -4px;    
-  }
+
   input[type="number"] {
     width: 60px;
     padding-left: 15px!important; // it's late
@@ -1142,15 +1143,28 @@ iframe {
       display: inline;
     }
   }
-  textarea {
-    display: block;
+  textarea,  input:not([type=submit]):not([type=image])  {
     width: 100%;
     @extend %styled-input;
+    padding: 5px 20px;
     border-color: #E6E6E6;
     overflow: visible;
+    border-radius: 5px;
     &:focus {
       border-color: darken(#E6E6E6, 15%);
     }
+  }
+  textarea,  input:not([type=submit]):not([type=image]), select {
+    margin-top: 15px;
+  }
+  textarea {
+    display: block;
+  }
+  input:not([type=submit]):not([type=image])  {
+    display: inline-block;
+  }
+  select {
+    width: 100%;
   }
   .btn-red {
     display: block;
