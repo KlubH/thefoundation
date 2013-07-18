@@ -259,7 +259,7 @@
 
 .home-social {
   max-width: 920px;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
 }
 
 .video-optin {
@@ -889,8 +889,8 @@ margin-right: 20px;
 
 /* @component comments */
 
-#disqus_thread {
-  margin-top: 50px;
+.fb_iframe_widget.fb-comments {
+  // margin-top: 50px;
 }
 
 /*-- @component ABOUT PAGE --*/
@@ -1245,7 +1245,7 @@ iframe {
 }
 
 .landing-testimonials {
-  margin-top: 50px;
+  // margin-top: 50px;
   .testimonial {
     background: #eeeeee;
     color: #000;
@@ -1305,6 +1305,8 @@ iframe {
 .moonray-form-p2c7381f36 > p {
   display: none;
 }
+
+
 
 .fb-count-share {
   display: inline-block;

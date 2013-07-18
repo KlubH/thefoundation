@@ -296,56 +296,32 @@
 
 
 ul.socialcount {
-  margin-left: 0;
-  margin-top: 30px;
+ margin-top: 15px;
   li {
+    display: inline-block;
     margin-right: 10px;
     font-size: 14px;
     border-radius: 4px;
     color: #fff;
+    vertical-align: top;
   }
-  .facebook {
-    text-shadow: 0 1px 0 #2d4582;
-    border: 1px solid #435d9f;
-    box-shadow: 0 1px 5px rgba(0,0,0,.2), inset 0 1px 0 #7b92cd, inset 0 0 5px rgba(114,145,224,.5);
-    background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#354a81), to(#4c69b2));
-    background-image: -webkit-linear-gradient(bottom, #354a81 0%, #4c69b2 100%);
-    background-image: -moz-linear-gradient(bottom, #354a81 0%, #4c69b2 100%);
-    backyeaground-image: -o-linear-gradient(bottom, #354a81 0%, #4c69b2 100%);
-    background-image: linear-gradient(bottom, #354a81 0%, #4c69b2 100%);
+  a {
+    text-decoration: none;
+    display: inline-block;
   }
-  .facebook-share {
-    @extend .facebook;
-  }
-  .twitter {
-    text-shadow: 0 1px 0 #2d4582;
-    border: 1px solid #0085b2;
-    box-shadow: 0 1px 5px rgba(0,0,0,.2), inset 0 1px 0 #4fcaf3, inset 0 0 5px rgba(98,205,241,.5);
-    background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#008ab9), to(#00ade7));
-    background-image: -webkit-linear-gradient(bottom, #008ab9 0%, #00ade7 100%);
-    background-image: -moz-linear-gradient(bottom, #008ab9 0%, #00ade7 100%);
-    background-image: -o-linear-gradient(bottom, #008ab9 0%, #00ade7 100%);
-    background-image: linear-gradient(bottom, #008ab9 0%, #00ade7 100%);
-  }
-  .googleplus {
-    text-shadow: 0 1px 0 #88200d;
-    border: 1px solid #ae2c15;
-    box-shadow: 0 1px 5px rgba(0,0,0,.2), inset 0 1px 0 #ea8371, inset 0 0 5px rgba(239,115,94,.5);
-    background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#b73823), to(#d34127));
-    background-image: -webkit-linear-gradient(bottom, #b73823 0%, #d34127 100%);
-    background-image: -moz-linear-gradient(bottom, #b73823 0%, #d34127 100%);
-    background-image: -o-linear-gradient(bottom, #b73823 0%, #d34127 100%);
-    background-image: linear-gradient(bottom, #b73823 0%, #d34127 100%);
-  }
-  .icon-facebook-share {
-    background-image: url("../images/facebook-share.png");
-    width: 16px;
-    height: 16px;
-    margin-top: -4px;
+  .count {
+    background:#f0f0f0;
+    color: #444;
+    padding: 4px 5px 3px 5px;
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: top;
   }
 }
 
-.home-social ul.socialcount {
+.home-ial ul.socialcount {
   margin-top: 0;
 }
 

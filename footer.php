@@ -12,7 +12,6 @@
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="//fast.wistia.com/static/iframe-api-v1.js"></script>
 <script type="text/javascript"src="<?php echo get_template_directory_uri(); ?>/scripts/mediaelement.js"></script>
-<script type="text/javascript"src="<?php echo get_template_directory_uri(); ?>/scripts/socialcount.min.js"></script>
 <script type="text/javascript"src="<?php echo get_template_directory_uri(); ?>/scripts/main.js"></script>
 <script type="text/javascript">
 /* <![CDATA[ */
