@@ -1388,7 +1388,7 @@ iframe {
     margin-bottom: 20px; }
 
 .welcomegate-optin {
-  margin-top: 40px; }
+  margin: 40px auto; }
   .welcomegate-optin .home-optin p {
     width: auto;
     text-align: center; }

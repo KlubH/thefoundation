@@ -13,10 +13,10 @@ Template Name: Application Page
 
   <h1 class="center">Apply to Become a Member of The Foundation</h1>
   <h2 class="center">Build A Profitable Web Company In 6 Months Even If You Have No Idea What To Start Or How To Code</h2>
-  <ol class="application-steps">
+<!--   <ol class="application-steps">
     <li class="active">Apply</li>
     <li>Confirm &amp; Await Approval</li>
-  </ol>
+  </ol> -->
 
   <div class="row">
     <div class="grid-wide">
