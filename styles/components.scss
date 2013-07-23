@@ -1082,7 +1082,7 @@ iframe {
 }
 
 .postcard {
-  background:url("../images/postcard_bg.jpg") repeat;
+  background: lighten(#FFFDF1, 1%);
   box-shadow: 0 1px 5px rgba(0,0,0,.25);
   border-radius: 10px;
   padding: 50px 20px 20px 20px;
@@ -1175,6 +1175,10 @@ iframe {
   }
   .moonray-form-input-type-image {
     text-align: center;
+  }
+  &.postcard-wide {
+    max-width: 600px;
+    margin: 0 auto;
   }
 }
 

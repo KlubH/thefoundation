@@ -18,7 +18,7 @@ Template Name: Application Page
     <li>Confirm &amp; Await Approval</li>
   </ol> -->
 
-  <div class="row">
+  <div class="row row-narrow">
 
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     
