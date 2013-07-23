@@ -135,7 +135,7 @@ Template Name: Home Page New
   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=122869331209455";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<div class="fb-comments" data-href="http://thefoundation.io/welcomegate/" data-width="500" data-num-posts="2"></div>      
+<div class="fb-comments" data-href="http://thefoundation.io/welcomegate/" data-width="500" data-num-posts="4"></div>      
 <?php endif; ?>
   </section>
   <div class="grid-narrow">

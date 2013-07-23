@@ -1105,16 +1105,16 @@ iframe {
         display: block;
       }
       input[type="text"] {
-        width: 46%;        
+        width: 48%;        
         margin-bottom: 10px;
-        margin-right: 3%;
+        margin-right: 1%;
       }
       input[name="lastname"] {
         margin-right: 0;
         margin-left: 3%;
       }
       input[type="email"] {
-        width: 92%;
+        width: 100%;
       }
     }
   }
@@ -1150,6 +1150,7 @@ iframe {
     border-color: #E6E6E6;
     overflow: visible;
     border-radius: 5px;
+    font-style: normal;
     &:focus {
       border-color: darken(#E6E6E6, 15%);
     }
@@ -1170,6 +1171,9 @@ iframe {
     display: block;
     width: 100%;
     padding: 10px;
+    text-align: center;
+  }
+  .moonray-form-input-type-image {
     text-align: center;
   }
 }
@@ -1297,9 +1301,6 @@ iframe {
   input[type="submit"] {
     // @extend .btn-red;
   }
-}
-.moonray-form-element-wrapper {
-  display: inline-block;
 }
 
 .moonray-form-p2c7381f36 > p {

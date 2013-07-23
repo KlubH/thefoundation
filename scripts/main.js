@@ -192,7 +192,7 @@ var Menu = (function(){
         $logo.fadeIn();
         $homeCon.css("padding-top", c.$homeMenu.height() + "px");
         $ul.animate({
-          right: "-310px"
+          right: "-290"
         }, 1500);
       } else {
         $logo.hide();
