@@ -1,5 +1,10 @@
 <!-- @module SOCIALCOUNT -->
 <?php 
+  function get_shares($url) {
+    $json_string = file_get_contents("http://graph.facebook.com/?id=" . $url);
+    $json = json_decode($json_string, true);
+    return intval($json['shares']);
+  }
   function get_tweets($url) {
     $json_string = file_get_contents('http://urls.api.twitter.com/1/urls/count.json?url=' . $url);
     $json = json_decode($json_string, true);
@@ -38,8 +43,30 @@
   if ($tweets < 1) {$tweets = "Tweet";}
   if ($plusones < 1) {$plusones = "+1";}
 ?>
-<ul class="socialcount" data-url="<?php the_permalink(); ?>">
-  <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" title="Share on Facebook"><span class="social-icon icon-facebook"></span><span class="count"><?php echo $likes; ?></span> </a></li>
-  <li class="twitter"><a href="https://twitter.com/intent/tweet?text=<?php the_permalink(); ?>" title="Share on Twitter"><span class="social-icon icon-twitter"></span><span class="count"><?php echo $tweets; ?></span> </a></li>
-  <li class="googleplus"><a href="https://plus.google.com/share?url=<?php the_permalink();?>" title="Share on Google Plus"><span class="social-icon icon-googleplus"></span><span class="count"><?php echo $plusones; ?></span>  </a></li>
-</ul>
+<ul class="socialcount">
+    <li class="facebook-share">
+      <a href="#"
+        onclick="
+          window.open(
+            'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 
+            'facebook-share-dialog', 
+            'width=626,height=436'); 
+          return false;">
+        <img src="<?php bloginfo('template_directory'); ?>/images/fb_share_button.png">
+      </a>
+      <span class="count"><?php echo $shares; ?></span> 
+    </li>
+    <li class="twitter">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="" data-count="none">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      <span class="count"><?php echo $tweets; ?></span> 
+    </li>   
+    <li class="twitter">
+       <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+        <g:plusone size="medium" annotation="none"></g:plusone>
+      <span class="count"><?php echo $plusones; ?></span> 
+    </li>
+    <li><div id="fb-root"></div>
+      <script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+      <fb:like send="true" width="450" show_faces="false"></fb:like></li>
+     </ul>

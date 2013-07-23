@@ -17,7 +17,8 @@
           <?php the_content(""); ?>
         </div>
         
-        <?php get_template_part('component', 'socialcount'); ?>
+        <?php// get_template_part('component', 'socialcount'); ?>
+        <?php if (function_exists('sharethis_button')) { sharethis_button(); } ?>
 
         <!-- @component META -->
         <section class="meta">
