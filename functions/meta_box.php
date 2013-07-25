@@ -45,6 +45,28 @@ function cmb_sample_metaboxes( array $meta_boxes ) {
   );
 
   $meta_boxes[] = array(
+    'id'         => 'blog_fields',
+    'title'      => 'Blog Comments Options',
+    'pages'      => array( 'post', ), // Post type
+    'context'    => 'normal',
+    'priority'   => 'high',
+    'show_names' => true, // Show field names on the left
+    'fields'     => array(
+      
+      array(
+        'name' => 'Use Facebook Comments?',
+        'id'   => $prefix . 'fb_comments_bool',
+        'type' => 'checkbox'
+      ),    
+      array(
+        'name' => 'Facebook Comments URL',
+        'id'   => $prefix . 'fb_comments_link',
+        'type' => 'text'
+      )     
+    )
+  );
+
+  $meta_boxes[] = array(
     'id'         => 'join',
     'title'      => 'Application Info',
     'pages'      => array( 'component', ), // Post type

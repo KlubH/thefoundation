@@ -342,6 +342,7 @@ margin-right: 20px;
   h2 {
     margin-top: 70px;
     padding-top: 70px;
+    margin-bottom: 40px;
     background: url("../images/sep.png") no-repeat center top;
   }
   .intro {
@@ -477,6 +478,7 @@ margin-right: 20px;
 }
 
 .post-single {
+  position: relative;
   ul {
     margin-left: 3em;
   }
@@ -1187,6 +1189,9 @@ iframe {
   border-radius: 10px;
   padding: 20px;
   margin-top: 47px;
+  h3 {
+    font-size: 23px;
+  }
   .testimonial {
     background:#D4D4D4;
     color: #000;
@@ -1311,7 +1316,19 @@ iframe {
   display: none;
 }
 
+#disqus_thread {
+  margin-bottom: 30px;
+}
 
+.sharethis-container {
+  position: absolute;
+  left: -90px;
+  top: 8px;
+  > span {
+    display: block;
+    margin-bottom: 15px;
+  }
+}
 
 .fb-count-share {
   display: inline-block;

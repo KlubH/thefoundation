@@ -2,6 +2,13 @@
 
   require('functions/meta_box.php');
 
+  /** Admin Slug Function */
+  function the_slug() {
+      $post_data = get_post($post->ID, ARRAY_A);
+      $slug = $post_data['post_name'];
+      return $slug; 
+  }
+
   add_action( 'init', 'be_initialize_cmb_meta_boxes', 9999 );
   function be_initialize_cmb_meta_boxes() {
     if ( !class_exists( 'cmb_Meta_Box' ) ) {

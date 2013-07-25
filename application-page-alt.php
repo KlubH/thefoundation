@@ -29,8 +29,9 @@ Template Name: Application Page Alt
       </div>  
 
     <div class="grid-narrow text application-aside">
+      <h3>Attend Virtually Anywhere</h3>
       <img src="<?php echo get_bloginfo('template_directory'); ?>/images/globe.png" alt="">
-      <p class="center">Our Students</p>
+      <p class="center">Our Past Students</p>
       <h3>Community</h3>
       <p>Lonely entrepreneur isn't possible inside The Foundation. Students end up becoming best friends, holding live events, and supporting the ha-ell out of each other. You can move through all of the ups and downs of starting a business. Together.</p>
       <h3>Starting from Nothing</h3>
