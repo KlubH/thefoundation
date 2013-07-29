@@ -48,7 +48,6 @@
         <div class="pull-l"><?php previous_post_link('%link', '&larr; Previous Post'); ?></div>
         <div class="pull-r"><?php next_post_link('%link', 'Next Post &rarr;'); ?></div>
       </nav>
-      <?php comments_template( '', true ); ?>
 
       <?php
        if ($fb_comments_bool == "on") { ?>
@@ -63,7 +62,10 @@
   <div class="fb-comments" data-href="<?php echo $fb_comments_link; ?>" data-width="525" data-num-posts="4"></div>      
 
 
-      <?php } ?>
+      <?php } else {?>
+
+            <?php comments_template( '', true ); ?>
+    <?php } ?>
 
     <?php endif; ?>
 
