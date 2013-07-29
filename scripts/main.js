@@ -82,6 +82,7 @@ var HomeVideo = (function(){
   var c; 
 
   return {
+    
     config: {
       $modalTrigger: $j(".modal-trigger"),
       $modalVid: $j("#video-modal"),
