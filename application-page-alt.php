@@ -29,7 +29,7 @@ Template Name: Application Page Alt
       </div>  
 
     <div class="grid-narrow text application-aside">
-      <h3>Attend Virtually Anywhere</h3>
+      <h3>Online From Anywhere</h3>
       <img src="<?php echo get_bloginfo('template_directory'); ?>/images/globe.png" alt="">
       <p class="center">Our Past Students</p>
       <h3>Community</h3>
