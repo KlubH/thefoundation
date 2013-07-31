@@ -1196,11 +1196,26 @@ iframe {
     font-size: 23px;
   }
   .testimonial {
+    clear: both;
     background:#D4D4D4;
     color: #000;
-    &:after {
-      border-color: #D4D4D4 transparent transparent transparent;
+    blockquote {
+      margin-bottom: 40px;
     }
+    cite {
+      text-align: right;
+      padding-right: 80px;
+    }
+    &:after {
+      display: none;
+    }
+  }
+  .bordered-image {
+    margin-top: -90px;
+    position: relative;
+    z-index: 10;
+    float: right;
+    margin-right: 10px;
   }
 }
 

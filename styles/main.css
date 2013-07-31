@@ -1373,10 +1373,22 @@ iframe {
   .application-aside h3 {
     font-size: 23px; }
   .application-aside .testimonial {
+    clear: both;
     background: #D4D4D4;
     color: #000; }
+    .application-aside .testimonial blockquote {
+      margin-bottom: 40px; }
+    .application-aside .testimonial cite {
+      text-align: right;
+      padding-right: 80px; }
     .application-aside .testimonial:after {
-      border-color: #D4D4D4 transparent transparent transparent; }
+      display: none; }
+  .application-aside .bordered-image {
+    margin-top: -90px;
+    position: relative;
+    z-index: 10;
+    float: right;
+    margin-right: 10px; }
 
 .action-guides {
   margin-top: 40px;
