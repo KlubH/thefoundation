@@ -38,7 +38,7 @@ Template Name: Application Page Alt
       <p>No idea? No money? No credibility? No product creation experience? Notta problem son! We create companies out of thin air, and show you how.</p> 
       <h3>Expert Coaches</h3>
       <p>Not just any coach. Our expert coaches all have vetted business with paying customers. Many entrepreneurs are stuck with blind spots and need a second perspective. Get live help when you need it.</p>
-      <h3>Trusted By Industry Experts</h3>
+      <h3>Trusted By The Best</h3>
      <div class="testimonials">
         <?php
         $home_args3 = array(
