@@ -11,7 +11,7 @@ Template Name: Application Page Alt
 
 <div class="container scroll-page row application">
 
-  <h1 class="center">Apply to Become a Member of The Foundation</h1>
+  <h1 class="center">Apply to Join The Foundation</h1>
 
   <div class="row">
     <div class="grid-wide">
