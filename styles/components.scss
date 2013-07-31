@@ -1032,8 +1032,11 @@ iframe {
 }
 
 .apply-now {
-  font-size: 25px;
-  margin-bottom: 15px;  
+  text-indent: -999px;
+  display: block;
+  background-image: url("../images/applynow.png");
+  width: 129px;
+  height: 38px; 
 }
 
 .application-steps {  
@@ -1096,8 +1099,8 @@ iframe {
     width: 96px;
     height: 92px;
     position: absolute;    
-    left: 113px;
-    top: -54px;
+    left: 134px;
+    top: -61px;
   }
 
   p {
