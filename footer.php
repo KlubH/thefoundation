@@ -2,7 +2,7 @@
   <div class="container">
     <div class="pull-l">
       <a class="logo" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
-      <p>&copy; <?php echo date("Y"); ?> <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>. All Rights Reserved.</p>
+      <p>&copy; <?php echo date("Y"); ?> <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>. All Rights Reserved. <a href="<?php bloginfo('url'); ?>/disclosures/">Disclosures</a> </p>
     </div>
     <nav class="site-footer-nav pull-r">      
       <?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>

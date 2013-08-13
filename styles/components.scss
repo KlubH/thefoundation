@@ -540,15 +540,17 @@ margin-right: 20px;
   font-size: 16px;
   height: 16px;
   padding-left: 25px;
-  a {
+  .right {
+    a {
     color: #000;
+    }
+    a:hover {
+      color: #d72828;
+    }
     float: right;
     background: url("../images/comment_bubble.png") no-repeat left center;
     padding-left: 25px;
     display: inline-block;
-    &:hover {
-      color: #d72828;
-    }
   }
 }
 
