@@ -864,6 +864,11 @@ ul.socialcount {
     .post h4 a, .post .widget:not(.join-widget):not(.optin-widget) li a a, .widget:not(.join-widget):not(.optin-widget) li .post a a, .post .fancy-widget:not(.join-widget):not(.optin-widget) li a a, .fancy-widget:not(.join-widget):not(.optin-widget) li .post a a, .post h1 a {
       text-decoration: none; }
 
+.more-link {
+  display: block;
+  padding-top: 20px;
+  text-align: right; }
+
 .post-single, .blog-post {
   position: relative; }
   .post-single ul, .blog-post ul {
