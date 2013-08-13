@@ -23,8 +23,8 @@ $url_r=str_replace("http://","",$url);
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title><?php echo $title; ?></title>
-
+  <meta name="description" content="The most important word for success in entrepreneurship is 14 words. Do you know what it is?">
+  <title><?php echo $title; ?></title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script type="text/javascript">

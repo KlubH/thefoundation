@@ -477,7 +477,7 @@ margin-right: 20px;
   }
 }
 
-.post-single {
+.post-single, .blog-post {
   position: relative;
   ul {
     margin-left: 3em;
@@ -531,10 +531,19 @@ margin-right: 20px;
 
 .comment-count {
   margin-bottom: 25px;
-  color: #d72828;
   font-size: 16px;
-  background: url("../images/comment_bubble.png") no-repeat left center;
+  height: 16px;
   padding-left: 25px;
+  a {
+    color: #000;
+    float: right;
+    background: url("../images/comment_bubble.png") no-repeat left center;
+    padding-left: 25px;
+    display: inline-block;
+    &:hover {
+      color: #d72828;
+    }
+  }
 }
 
 /*-- @component PREVIEW --*/

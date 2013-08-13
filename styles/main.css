@@ -387,7 +387,7 @@ input {
     border-radius: 4px; }
 
 /*-- @module LEAD --*/
-.lead p, .home-content .intro p, .post-single blockquote p {
+.lead p, .home-content .intro p, .post-single blockquote p, .blog-post blockquote p {
   font-size: 20px;
   color: #888888;
   line-height: 1.4;
@@ -864,26 +864,26 @@ ul.socialcount {
     .post h4 a, .post .widget:not(.join-widget):not(.optin-widget) li a a, .widget:not(.join-widget):not(.optin-widget) li .post a a, .post .fancy-widget:not(.join-widget):not(.optin-widget) li a a, .fancy-widget:not(.join-widget):not(.optin-widget) li .post a a, .post h1 a {
       text-decoration: none; }
 
-.post-single {
+.post-single, .blog-post {
   position: relative; }
-  .post-single ul {
+  .post-single ul, .blog-post ul {
     margin-left: 3em; }
-  .post-single li {
+  .post-single li, .blog-post li {
     margin-bottom: 15px; }
-  .post-single h2 {
+  .post-single h2, .blog-post h2 {
     font-size: 25px;
     margin-bottom: 20px; }
-  .post-single h3 {
+  .post-single h3, .blog-post h3 {
     font-size: 21px;
     margin-bottom: 20px; }
-  .post-single h4, .post-single .widget:not(.join-widget):not(.optin-widget) li a, .widget:not(.join-widget):not(.optin-widget) li .post-single a, .post-single .fancy-widget:not(.join-widget):not(.optin-widget) li a, .fancy-widget:not(.join-widget):not(.optin-widget) li .post-single a {
+  .post-single h4, .post-single .widget:not(.join-widget):not(.optin-widget) li a, .widget:not(.join-widget):not(.optin-widget) li .post-single a, .post-single .fancy-widget:not(.join-widget):not(.optin-widget) li a, .fancy-widget:not(.join-widget):not(.optin-widget) li .post-single a, .blog-post h4, .blog-post .widget:not(.join-widget):not(.optin-widget) li a, .widget:not(.join-widget):not(.optin-widget) li .blog-post a, .blog-post .fancy-widget:not(.join-widget):not(.optin-widget) li a, .fancy-widget:not(.join-widget):not(.optin-widget) li .blog-post a {
     font-size: 18px;
     margin-bottom: 20px; }
-  .post-single blockquote {
+  .post-single blockquote, .blog-post blockquote {
     font-size: 16px;
     font-style: italic;
     margin-left: 3em; }
-    .post-single blockquote p {
+    .post-single blockquote p, .blog-post blockquote p {
       color: #888; }
 
 /*-- @component PODCAST POST --*/
@@ -903,10 +903,17 @@ ul.socialcount {
 
 .comment-count {
   margin-bottom: 25px;
-  color: #d72828;
   font-size: 16px;
-  background: url("../images/comment_bubble.png") no-repeat left center;
+  height: 16px;
   padding-left: 25px; }
+  .comment-count a {
+    color: #000;
+    float: right;
+    background: url("../images/comment_bubble.png") no-repeat left center;
+    padding-left: 25px;
+    display: inline-block; }
+    .comment-count a:hover {
+      color: #d72828; }
 
 /*-- @component PREVIEW --*/
 .preview {
