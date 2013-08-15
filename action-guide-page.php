@@ -32,7 +32,7 @@ Template Name: Action Guides Page
       <div class="media-content">
         <h2><?php the_title(); ?></h2>
         <?php the_content(); ?>
-        <a class="btn-red" href="<?php echo $download_link; ?>" download>Download</a>        
+        <a class="btn-red ga_click" rel="action-guide;download;<?php echo basename($download_link); ?>" href="<?php echo $download_link; ?>" download>Download</a>        
       </div>
     </li>
   </ul>

@@ -875,6 +875,12 @@ ul.socialcount {
     margin-left: 3em; }
   .post-single li, .blog-post li {
     margin-bottom: 15px; }
+  .post-single h1 a, .blog-post h1 a {
+    color: #000;
+    -webkit-transition: color .1s linear; }
+    .post-single h1 a:hover, .blog-post h1 a:hover {
+      color: #d72828;
+      -webkit-transition: color .1s linear; }
   .post-single h2, .blog-post h2 {
     font-size: 25px;
     margin-bottom: 20px; }
