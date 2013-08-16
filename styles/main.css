@@ -1400,6 +1400,10 @@ iframe {
     .application-aside .testimonial cite {
       text-align: right;
       padding-right: 80px; }
+      .application-aside .testimonial cite.left {
+        text-align: left;
+        padding: 0;
+        padding-left: 80px; }
     .application-aside .testimonial:after {
       display: none; }
   .application-aside .bordered-image {
@@ -1408,6 +1412,10 @@ iframe {
     z-index: 10;
     float: right;
     margin-right: 10px; }
+    .application-aside .bordered-image.left {
+      float: left;
+      margin-left: 10px;
+      margin-right: 0; }
 
 .action-guides {
   margin-top: 40px;
