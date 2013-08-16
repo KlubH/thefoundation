@@ -30,8 +30,8 @@
       </div>
       <!-- @module BUTTON GROUP -->
       <div class="button-group">
-        <a href="<?php echo $itunes_link; ?>" class="btn-light">Subscribe on iTunes</a>
-        <a href="<?php echo $rss_link; ?>" class="btn-light">Subscribe via RSS</a>
+        <a href="<?php echo $itunes_link; ?>" class="btn-light ga_click" rel="podcast-click;itunes;">Subscribe on iTunes</a>
+        <a href="<?php echo $rss_link; ?>" class="btn-light ga_click" rel="podcast-click;rss;">Subscribe via RSS</a>
       </div>
       <?php endwhile; ?>
 
@@ -60,4 +60,3 @@
 
 
 <?php get_footer(); ?>
-  

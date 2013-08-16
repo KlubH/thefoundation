@@ -22,8 +22,8 @@
      <h1><?php the_title(); ?></h1>
     <!-- @module BUTTON GROUP -->
      <div class="button-group">
-        <a href="#" data-state="paused"  class="btn-light btn-play show-audio">Play Podcast</a>
-      <a href="<?php echo $open_itunes_link; ?>" target="itunes_store" class="btn-light">Open in iTunes</a>
+        <a href="#" data-state="paused"  class="btn-light btn-play show-audio ga_click" rel="podcast-episodes;play;<?php echo basename($_SERVER['REQUEST_URI']); ?>">Play Podcast</a>
+      <a href="<?php echo $open_itunes_link; ?>" target="itunes_store" class="btn-light ga_click" rel="podcast-episodes;open-in-itunes;<?php echo basename($_SERVER['REQUEST_URI']); ?>">Open in iTunes</a>
      </div>
 
     <?php if( function_exists('powerpress_get_enclosure_data') ) {

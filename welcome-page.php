@@ -14,7 +14,6 @@ if (isset($_POST["title"])) {
 } else {
 	$title="Sam Ovens Case Study: How To Build A Web Based Product Without Any Idea, Limited Cash, Or Development Experience";
 }
-
 $url_r=str_replace("http://","",$url);
 
 ?>
@@ -90,6 +89,7 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
 <div class="container welcomegate-content">
 	<div class="lead center">
 		<p>It looks like you're about to access</p>
+    <!-- <?php var_dump($title); ?> -->
 		<h1><?php echo $title; ?></h1>
 	</div>
 </div>
@@ -165,7 +165,7 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
   <?php }} ?>
 </div>
 <p class="skip">
-	or you can <a href="<?php echo $url; ?>">Skip this step &rarr;</a>
+	or you can <a href="<?php echo $url; ?>" class="ga_click" rel="skip-this-step;skip-this-step;skip-this-step">Skip this step &rarr;</a>
 </p>
 </div>
 
