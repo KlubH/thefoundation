@@ -24,7 +24,10 @@
         </div>
         
         <?php// get_template_part('component', 'socialcount'); ?>
+        <div class="share-section">
+        <div class="diggin-this-graphic"><div class="text">You diggin this? :-)</div><img src="http://www.thefoundation.com/wp-content/themes/thefoundation/images/red-arrow.png"></div>
         <?php if (function_exists('sharethis_button')) { sharethis_button(); } ?>
+        </div>
       </article>
 
     <?php endwhile; ?>

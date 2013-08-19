@@ -1391,6 +1391,9 @@ iframe {
   margin-top: 47px; }
   .application-aside h3 {
     font-size: 23px; }
+  .application-aside .bordered-image {
+    padding: 2px;
+    border-radius: 5px; }
   .application-aside .testimonial {
     clear: both;
     background: #D4D4D4;
@@ -1502,6 +1505,40 @@ iframe {
   .sharethis-container > span {
     display: block;
     margin-bottom: 15px; }
+
+.diggin-this-graphic {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: top; }
+  .diggin-this-graphic .text, .diggin-this-graphic .media .media-content, .media .diggin-this-graphic .media-content, .diggin-this-graphic .action-guide, .diggin-this-graphic .widget .optin, .widget .diggin-this-graphic .optin, .diggin-this-graphic .fancy-widget .optin, .fancy-widget .diggin-this-graphic .optin, .diggin-this-graphic .widget-content, .diggin-this-graphic .widget ul, .widget .diggin-this-graphic ul, .diggin-this-graphic .fancy-widget ul, .fancy-widget .diggin-this-graphic ul, .diggin-this-graphic .postcard {
+    font-size: 22px;
+    padding: 13px 8px 0px 0;
+    vertical-align: top;
+    font-family: 'ff-tisa-web-pro', Georgia, serif;
+    font-weight: bold; }
+  .diggin-this-graphic img {
+    padding: 3px 0 0 119px;
+    margin-top: 9px;
+    position: absolute; }
+
+.share-section {
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+  padding: 30px 0 40px 0; }
+
+.laptop-map {
+  margin-left: -20px;
+  position: relative; }
+  .laptop-map img {
+    max-width: 354px; }
+  .laptop-map p {
+    position: absolute;
+    width: 115px;
+    top: 0;
+    left: 0;
+    padding: 13px 25px;
+    font-size: 22px;
+    line-height: 27px; }
 
 .fb-count-share {
   display: inline-block;

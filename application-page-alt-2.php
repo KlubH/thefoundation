@@ -17,8 +17,13 @@ Template Name: Application Page Alt 2
 
     <div class="grid-narrow text application-aside">
       <h3>Online From Anywhere</h3>
-      <img src="<?php echo get_bloginfo('template_directory'); ?>/images/globe.png" alt="">
-      <p class="center">Our Past Students</p>
+      <div class="laptop-map">
+        <img src="<?php echo get_bloginfo('template_directory'); ?>/images/laptop-map.png" alt="">
+        <p class="">Get started
+                    with just a
+                    <b>laptop</b> and 
+                    the <b>internet</b></p>
+      </div>
       <h3>Community</h3>
       <p>Lonely entrepreneur isn't possible inside The Foundation. Students end up becoming best friends, holding live events, and supporting the ha-ell out of each other. You can move through all of the ups and downs of starting a business. Together.</p>
       <h3>Starting from Nothing</h3>

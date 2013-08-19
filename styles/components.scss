@@ -1220,6 +1220,10 @@ iframe {
   h3 {
     font-size: 23px;
   }
+  .bordered-image {
+    padding: 2px;
+    border-radius: 5px;
+  }
   .testimonial {
     clear: both;
     background:#D4D4D4;
@@ -1380,6 +1384,46 @@ iframe {
   > span {
     display: block;
     margin-bottom: 15px;
+  }
+}
+
+.diggin-this-graphic {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: top;
+  .text {
+    font-size: 22px;
+    padding: 13px 8px 0px 0;
+    vertical-align: top;
+    font-family: 'ff-tisa-web-pro', Georgia, serif;
+    font-weight: bold;
+  }
+  img {
+    padding: 3px 0 0 119px;
+    margin-top: 9px;
+    position: absolute;
+  }
+}
+.share-section {
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+  padding: 30px 0 40px 0;
+}
+
+.laptop-map {
+  margin-left: -20px;
+  position: relative;
+  img {
+    max-width: 354px;
+  }
+  p {
+    position: absolute;
+    width: 115px;
+    top: 0;
+    left: 0;
+    padding: 13px 25px;
+    font-size: 22px;
+    line-height: 27px;
   }
 }
 
