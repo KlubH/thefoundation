@@ -35,7 +35,7 @@ Template Name: Application Page Alt
         <p class="">Get started
                     with just a
                     <b>laptop</b> and 
-                    the <b>internet</b></p>
+                    the <b>internet.</b></p>
       </div>
       <h3>Community</h3>
       <p>Lonely entrepreneur isn't possible inside The Foundation. Students end up becoming best friends, holding live events, and supporting the ha-ell out of each other. You can move through all of the ups and downs of starting a business. Together.</p>

@@ -926,6 +926,14 @@ ul.socialcount {
       color: #000; }
     .comment-count .right a:hover {
       color: #d72828; }
+  .comment-count.no-margin {
+    margin: 0; }
+
+.author-attribution {
+  margin: 7px 0 25px 0;
+  font-size: 12px;
+  text-align: right;
+  color: #999; }
 
 /*-- @component PREVIEW --*/
 .preview {

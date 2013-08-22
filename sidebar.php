@@ -18,7 +18,7 @@
     <h2>Join the Foundation</h2>
     <div class="widget-content">
       <?php the_content(); ?>
-      <a class="btn-green" href="<?php echo $apply_link; ?>">Apply Now</a>
+      <a class="btn-green" href="<?php echo $apply_link; ?>" id="applynow" rel="application-click;sidebar;<?php echo basename($_SERVER['REQUEST_URI']); ?>">Apply Now</a>
     </div>
   </div>
 

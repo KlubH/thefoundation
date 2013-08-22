@@ -28,8 +28,8 @@ Template Name: Home Page New
     
      </div>    
 
-     <div id="video-modal">
-         <?php echo $hero_video_link; ?>
+     <div id="video-modal" class="homepage-video">
+       <?php echo $hero_video_link; ?>
      </div>
 
       

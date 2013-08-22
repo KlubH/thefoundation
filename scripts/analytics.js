@@ -36,4 +36,72 @@ $(function () {
   $('.st_twitter_vcount').on('click', window, track_social('tweet'));
   $('.st_email_vcount').on('click', window, track_social('email'));
   $('.st_plusone_vcount').on('click', window, track_social('google-plus'));
+
+  $('#applynow').on('click', window, function () {
+    ga('send', {
+      'hitType': 'pageview',
+      'page': '/opt-in-success',
+      'title': 'Opt-in Success'
+    });
+    track_apply('sidebar');
+  });
+
+  track_apply = function(type) {
+    ga('send', { 
+      'hitType': 'event',
+      'eventCategory': 'application-click',
+      'eventAction': type,
+      'eventLabel': window.location.href.replace('http://thefoundation.com', ''),
+      'page': window.location.href
+    });
+  }
+  $('.site-nav a').on('click', window, function () {
+    if ($(this).attr('title') == 'apply') {
+      track_apply('header');
+    }
+  });
+
+  // tracking the video
+  if ($('.homepage-video').length)
+    $('.homepage-video iframe.wistia_embed')[0].wistiaApi.bind('play', function () {
+      ga('send', { 
+        'hitType': 'event',
+        'eventCategory': 'video',
+        'eventAction': 'the-word',
+        'eventLabel': 'homepage-play',
+        'page': window.location.href
+      });
+    });
+  if ($('.tour-video').length)
+    $('.tour-video iframe.wistia_embed')[0].wistiaApi.bind('play', function () {
+      ga('send', { 
+        'hitType': 'event',
+        'eventCategory': 'video',
+        'eventAction': 'the-word',
+        'eventLabel': 'tour-play',
+        'page': window.location.href
+      });
+    });
+    
+  if ($('.homepage-video').length)
+    $('.homepage-video iframe.wistia_embed')[0].wistiaApi.bind('end', function () {
+      ga('send', { 
+        'hitType': 'event',
+        'eventCategory': 'video',
+        'eventAction': 'the-word',
+        'eventLabel': 'homepage-finish',
+        'page': window.location.href
+      });
+    });
+  if ($('.tour-video').length)
+    $('.tour-video iframe.wistia_embed')[0].wistiaApi.bind('end', function () {
+      ga('send', { 
+        'hitType': 'event',
+        'eventCategory': 'video',
+        'eventAction': 'the-word',
+        'eventLabel': 'tour-finish',
+        'page': window.location.href
+      });
+    });
+
 });

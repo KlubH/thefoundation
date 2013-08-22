@@ -27,9 +27,9 @@ Template Name: Home Page
         <!-- @component DISCOVER VIDEO -->
     
      </div>    
-
-     <div id="video-modal">
-         <?php echo $hero_video_link; ?>
+ 
+     <div id="video-modal" class="tour-video">
+       <?php echo $hero_video_link; ?>
      </div>
 
       <?php endwhile; ?>
