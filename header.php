@@ -4,7 +4,7 @@
   <meta charset="<?php bloginfo( 'charset' ); ?>" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="description" content="The most important word for success in entrepreneurship is 14 letters. Do you know what it is?">
-  <title><?php if(is_home()) { echo bloginfo("name"); echo " | "; echo bloginfo("description"); } else { echo wp_title('', false); } ?></title>
+  <title><?php if (is_single()) { echo wp_title('', false); } else { echo "Do You Know The Most Important Word In Business? | " . wp_title(" | ", false, right); echo bloginfo("name"); } ?></title>
 
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">

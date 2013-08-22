@@ -68,7 +68,7 @@ $(function () {
         'hitType': 'event',
         'eventCategory': 'video',
         'eventAction': 'the-word',
-        'eventLabel': 'homepage-play',
+        'eventLabel': 'homepage',
         'page': window.location.href
       });
     });
@@ -78,7 +78,7 @@ $(function () {
         'hitType': 'event',
         'eventCategory': 'video',
         'eventAction': 'the-word',
-        'eventLabel': 'tour-play',
+        'eventLabel': 'tour',
         'page': window.location.href
       });
     });
@@ -87,9 +87,9 @@ $(function () {
     $('.homepage-video iframe.wistia_embed')[0].wistiaApi.bind('end', function () {
       ga('send', { 
         'hitType': 'event',
-        'eventCategory': 'video',
+        'eventCategory': 'video-complete',
         'eventAction': 'the-word',
-        'eventLabel': 'homepage-finish',
+        'eventLabel': 'homepage',
         'page': window.location.href
       });
     });
@@ -97,9 +97,9 @@ $(function () {
     $('.tour-video iframe.wistia_embed')[0].wistiaApi.bind('end', function () {
       ga('send', { 
         'hitType': 'event',
-        'eventCategory': 'video',
+        'eventCategory': 'video-complete',
         'eventAction': 'the-word',
-        'eventLabel': 'tour-finish',
+        'eventLabel': 'tour',
         'page': window.location.href
       });
     });
