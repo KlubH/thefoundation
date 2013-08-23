@@ -144,6 +144,9 @@ input {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box; }
 
+#video-modal {
+  cursor: pointer; }
+
 .container {
   max-width: 960px;
   width: 95%;
