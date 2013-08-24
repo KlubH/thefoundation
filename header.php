@@ -33,6 +33,11 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
 </script>
 <!-- End Visual Website Optimizer Asynchronous Code -->
   <?php wp_head(); ?>
+  <meta property="og:title" content="Do you know the most important word in business?">
+  <meta property="og:url" content="http://thefoundation.com/">
+  <meta property="og:site_name" content="The Foundation">
+  <meta property="og:description" content="Training on how to start a lucrative software business even if you don’t have any idea what to build or how to code. We excel at helping entrepreneurs start from nothing.">
+  <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/images/facebook-thefoundation_logo.png">
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
