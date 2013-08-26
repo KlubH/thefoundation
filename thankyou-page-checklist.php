@@ -10,13 +10,9 @@ Template Name: Checklist Thank You Page
 </header>
 
 <div class="container scroll-page row application">
-  <ol class="application-steps second-step">
-    <li>Apply</li>
-    <li class="active">Confirm &amp; Await Approval</li>
-  </ol>
 
-  <h1 class="center">You are Almost Done.</h1>
-  <h2 class="center">Check Your Email Now To Confirm Your Application</h2>
+  <h1 class="center">Confirm Your Email Address For The Checklist</h1>
+  <h2 class="center">Check your email now for the copywriting checklist.</h2>
 
   <div class="center">
 	  <div id="fb-root"></div>
