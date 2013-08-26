@@ -12,6 +12,7 @@ Template Name: Application Page Alt
 <div class="container scroll-page row application">
 
   <h1 class="center">Apply to Join The Foundation</h1>
+  <h2 class="center">Build A Profitable Web Company In 6 Months Even If You Have No Idea What To Start Or How To Code</h2>
 
   <div class="row">
     <div class="grid-wide">
