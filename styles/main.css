@@ -768,9 +768,10 @@ ul.socialcount {
     margin-bottom: 0; }
   .home-content h2 {
     margin-top: 70px;
-    padding-top: 70px;
-    margin-bottom: 40px;
-    background: url("../images/sep.png") no-repeat center top; }
+    margin-bottom: 40px; }
+    .home-content h2.sep {
+      padding-top: 70px;
+      background: url("../images/sep.png") no-repeat center top; }
   .home-content .intro {
     margin-top: 50px; }
     .home-content .intro p {
@@ -1270,6 +1271,10 @@ iframe {
     font-family: "ff-tisa-web-pro", Georgia, serif;
     font-weight: 400;
     margin-top: 40px; }
+  .application .sublabel {
+    color: #999;
+    display: block;
+    font-size: 0.8em; }
 
 .apply-now {
   text-indent: -999px;

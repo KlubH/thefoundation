@@ -341,9 +341,11 @@ margin-right: 20px;
   }
   h2 {
     margin-top: 70px;
-    padding-top: 70px;
     margin-bottom: 40px;
-    background: url("../images/sep.png") no-repeat center top;
+    &.sep {
+      padding-top: 70px;
+      background: url("../images/sep.png") no-repeat center top;
+    }
   }
   .intro {
     margin-top: 50px;
@@ -1062,6 +1064,11 @@ iframe {
     font-family: $serif;
     font-weight: 400;
     margin-top: 40px;
+  }
+  .sublabel {
+    color: #999;
+    display: block;
+    font-size: 0.8em;
   }
 }
 
