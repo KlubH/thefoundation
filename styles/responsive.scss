@@ -110,6 +110,15 @@ img {
   }
 }
 
+@media screen and (max-width: 880px) {
+  .grid-narrow {
+    width: 100%;
+    margin-left: 0;
+  }
+  .grid-narrow {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 748px) {
   .button-group {
     margin-bottom: 40px;
@@ -215,5 +224,21 @@ img {
   .discover-video .btn-play {
     font-size: 14px;
     margin-left: -98px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .wistia_embed {
+    height: 450px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .wistia_embed {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .wistia_embed {
+    height: 165px;
   }
 }
