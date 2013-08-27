@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Application Page Alt
+Template Name: Application Page with Sidebar Left
 */
 ?>
 <?php get_header(); ?>
@@ -15,19 +15,6 @@ Template Name: Application Page Alt
   <h2 class="center">Build A Profitable Web Company In 6 Months Even If You Have No Idea What To Start Or How To Code</h2>
 
   <div class="row">
-    <div class="grid-wide">
-
-    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-    
-    <h2 class="apply-now">Apply Now!</h2>
-    <div class="postcard">
-    <?php the_content(); ?>
-    </div>
-
-  <?php endwhile; endif; ?>
-
-   
-      </div>  
 
     <div class="grid-narrow text application-aside">
       <h3>Online From Anywhere</h3>
@@ -35,20 +22,20 @@ Template Name: Application Page Alt
         <img src="<?php echo get_bloginfo('template_directory'); ?>/images/laptop-map.png" alt="">
         <p class="">Get started
                     with just a
-                    <b>laptop</b> and 
+                    <b>laptop</b> and
                     the <b>internet.</b></p>
       </div>
       <h3>Community</h3>
       <p>Lonely entrepreneur isn't possible inside The Foundation. Students end up becoming best friends, holding live events, and supporting the ha-ell out of each other. You can move through all of the ups and downs of starting a business. Together.</p>
       <h3>Starting from Nothing</h3>
-      <p>No idea? No money? No credibility? No product creation experience? Notta problem son! We create companies out of thin air, and show you how.</p> 
+      <p>No idea? No money? No credibility? No product creation experience? Notta problem son! We create companies out of thin air, and show you how.</p>
       <h3>Expert Coaches</h3>
       <p>Not just any coach. Our expert coaches all have vetted business with paying customers. Many entrepreneurs are stuck with blind spots and need a second perspective. Get live help when you need it.</p>
       <h3>Trusted By The Best</h3>
      <div class="testimonials">
         <?php
         $home_args3 = array(
-          'post_type' => 'testimonial', 
+          'post_type' => 'testimonial',
           'posts_per_page' => '3'
         );
         $testimonials = new WP_Query($home_args3);
@@ -59,16 +46,26 @@ Template Name: Application Page Alt
       ?>
         <div class="testimonial">
           <blockquote><?php echo $testimonial_content; ?></blockquote>
-          <cite>
+          <cite class="left">
             <strong><?php echo $testimonial_source_name; ?></strong>
             <?php echo $testimonial_source_title; ?>
           </cite>
         </div>
-        <div class="bordered-image"><?php the_post_thumbnail('testimonial'); ?></div>
+        <div class="bordered-image left"><?php the_post_thumbnail('testimonial'); ?></div>
     <?php }} ?>
      </div>
 
     </div>
+
+    <div class="grid-wide">
+      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+      <h2 class="apply-now">Apply Now!</h2>
+      <div class="postcard">
+      <?php the_content(); ?>
+      </div>
+      <?php endwhile; endif; ?>
+    </div>
+
   </div>
 
 </div>

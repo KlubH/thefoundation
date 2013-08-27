@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Application Page
+Template Name: Application Page (Single Column)
 */
 ?>
 <?php get_header(); ?>
@@ -21,7 +21,7 @@ Template Name: Application Page
   <div class="row row-narrow">
 
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-    
+
     <h2 class="apply-now">Apply Now!</h2>
     <div class="postcard">
     <?php the_content(); ?>
@@ -29,7 +29,7 @@ Template Name: Application Page
 
   <?php endwhile; endif; ?>
 
-   
+
 
 
   </div>
@@ -56,4 +56,3 @@ loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure"
 olark.identify('8425-248-10-1963');/*]]>*/</script><noscript><a href="https://www.olark.com/site/8425-248-10-1963/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
 <!-- end olark code -->
 <?php get_footer(); ?>
-  
