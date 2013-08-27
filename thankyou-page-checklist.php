@@ -23,25 +23,18 @@ Template Name: Checklist Thank You Page
 	    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=209982189069231";
 	    fjs.parentNode.insertBefore(js, fjs);
 	  }(document, 'script', 'facebook-jssdk'));</script>
-	  
+
 	  <div class="fb-like-box" data-href="https://www.facebook.com/TheFoundation.io" data-width="400" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
   </div>
 
   <div class="row">
 
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-    
-
-    <?php the_content(); ?>
-
-  <?php endwhile; endif; ?>
-
-   
-
+      <?php the_content(); ?>
+    <?php endwhile; endif; ?>
 
   </div>
 
 </div>
 
 <?php get_footer(); ?>
-  
