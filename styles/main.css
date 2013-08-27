@@ -1728,8 +1728,12 @@ img {
     border-bottom: 4px solid #9d9d98;
     text-indent: -9999px; }
 
+  body {
+    padding-top: 50px; }
+
   .site-header.fixed-top {
-    position: static; }
+    position: absolute;
+    top: 0; }
 
   .site-nav ul {
     margin-top: 10px;
@@ -1751,7 +1755,22 @@ img {
 
   .discover-video .btn-play {
     font-size: 14px;
-    margin-left: -98px; } }
+    margin-left: -98px; }
+
+  .row.row-narrow, .row-narrow.media, .row-narrow.media {
+    width: 100%; }
+
+  .postcard input:not([type=submit]), .postcard textarea {
+    max-width: 100%; }
+
+  .application h2 {
+    margin-bottom: 16px;
+    margin-top: 10px; }
+    .application h2.apply-now {
+      margin-bottom: 33px; }
+
+  .grid-narrow.application-aside {
+    overflow: hidden; } }
 @media screen and (max-width: 800px) {
   .wistia_embed {
     height: 450px; } }
