@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Thank You Page
+Template Name: 404 Page
 */
 ?>
 <?php get_header(); ?>
@@ -18,4 +18,3 @@ Template Name: Thank You Page
 </div>
 
 <?php get_footer(); ?>
-  
