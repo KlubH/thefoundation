@@ -114,7 +114,7 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
 <div class="optin home-optin lead">
 	<p>Confirm your email to get access</p>
   <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/themes/smoothness/jquery-ui.css" type="text/css" /><link rel="stylesheet" href="//www1.moon-ray.com/v2.4/include/formEditor/gencss.php?uid=p2c7381f14" type="text/css" /><script type="text/javascript" src="//www1.moon-ray.com/v2.4/include/formEditor/genjs-v2.php?html=false&uid=p2c7381f14"></script>
-					<form class="moonray-form-clearfix" action="https://forms.moon-ray.com/v2.4/form_processor.php?" method="post">
+					<form class="moonray-form-clearfix ga_submit pa_optin" action="https://forms.moon-ray.com/v2.4/form_processor.php?" method="post">
 					<div class="moonray-form-element-wrapper moonray-form-element-wrapper-alignment-left moonray-form-input-type-email"><input name="email" type="email" class="moonray-form-input" id="mr-field-element-6871664430" required value placeholder="You@domain.com"/></div>
 					<div class="moonray-form-element-wrapper moonray-form-element-wrapper-alignment-left moonray-form-input-type-image"><input type="submit" name="submit" value="Send Now" class="moonray-form-input" id="mr-field-element-684993176953"\ data-lastDisplayVal="&quot;Submit&quot;"/></div>
 					<div class="moonray-form-element-wrapper moonray-form-input-type-hidden"><input name="redirect" type="hidden" value="http://thefoundation.com/blog-redirect.php?a=<? echo $url_r; ?>"/></div>

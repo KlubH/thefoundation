@@ -19,7 +19,7 @@ $(function () {
   $('.ga_submit').submit(track);
 
   // Social
-  track_social = function(type) {
+  var track_social = function(type) {
     return function () {
       var page = window.location.pathname.split('/').filter(function(x) { return x.length; }).pop();
       console.log('track_social');
@@ -37,6 +37,16 @@ $(function () {
   $('.st_email_vcount').on('click', window, track_social('email'));
   $('.st_plusone_vcount').on('click', window, track_social('google-plus'));
 
+
+  var track_apply = function(type) {
+    ga('send', { 
+      'hitType': 'event',
+      'eventCategory': 'application-click',
+      'eventAction': type,
+      'eventLabel': window.location.href.replace('http://thefoundation.com', ''),
+      'page': window.location.href
+    });
+  }
   $('#applynow').on('click', window, function () {
     ga('send', {
       'hitType': 'pageview',
@@ -46,15 +56,6 @@ $(function () {
     track_apply('sidebar');
   });
 
-  track_apply = function(type) {
-    ga('send', { 
-      'hitType': 'event',
-      'eventCategory': 'application-click',
-      'eventAction': type,
-      'eventLabel': window.location.href.replace('http://thefoundation.com', ''),
-      'page': window.location.href
-    });
-  }
   $('.site-nav a').on('click', window, function () {
     if ($(this).attr('title') == 'apply') {
       track_apply('header');
@@ -103,5 +104,14 @@ $(function () {
         'page': window.location.href
       });
     });
+
+
+    // Perfect Audience Tracking
+  var pa_optin = function () {
+    _pa.track('OptIn');      
+  };
+  $('.pa_optin').click(pa_optin);
+  $('#fshare').click(pa_optin);
+    
 
 });

@@ -19,7 +19,7 @@
         </div>
         <!-- @component META -->
         <section class="meta">
-          <h4>By <?php the_author_posts_link(); ?> on <?php the_time('d/m/y'); ?></h4>       
+          <h4>By <?php the_author(); ?> on <?php the_time('d/m/y'); ?></h4>       
         </section>
       </article>
 
