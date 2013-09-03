@@ -40,18 +40,26 @@
 
     <?php
       $podcast_args = array(
-        'post_type' => 'podcast'
+        'post_type' => 'podcast',
+        'posts_per_page' => 30
       );
       $podcasts = new WP_Query($podcast_args);
-      if ($podcasts->have_posts()) {while ($podcasts->have_posts()) {$podcasts->the_post(); ?>
+      if ($podcasts->have_posts()): 
+      while ($podcasts->have_posts()): $podcasts->the_post(); ?>
 
         <!-- @component PODCAST | @component POST -->
         <article class="post podcast">
           <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
         </article>
 
-    <?php }} ?>
+    <?php endwhile; ?>
 
+      <!-- @component CONTENT NAV -->
+      <nav class="content-nav">
+        <?php posts_nav_link(' &#183; ', '&larr; Newer Posts', 'Older Posts &rarr;'); ?>
+      </nav>
+
+    <?php endif; ?>
   </section>
 
   <!-- @component SIDEBAR -->
