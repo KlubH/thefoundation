@@ -211,4 +211,10 @@ var Menu = (function(){
 
 $j(document).ready(function(){
   TF.init(); 
+  if (setupZoom)
+    setupZoom();
+  $j("div#fshare").click(function() { 
+    $j(this).delay(1000*9).fadeOut(1000); 
+    $j(this).next("#downloadpdf").delay(1000*10).fadeIn(2000);
+  });
 });

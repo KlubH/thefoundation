@@ -22,7 +22,6 @@ $(function () {
   var track_social = function(type) {
     return function () {
       var page = window.location.pathname.split('/').filter(function(x) { return x.length; }).pop();
-      console.log('track_social');
       ga('send', { 
         'hitType': 'event',
         'eventCategory': 'social-click',
