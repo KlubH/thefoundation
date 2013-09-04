@@ -905,6 +905,9 @@ ul.socialcount {
   padding-left: 50px;
   border-bottom: 1px solid #dddddd; }
 
+.single-podcast .btn-red, .single-podcast .action-guide input[type="submit"], .action-guide .single-podcast input[type="submit"], .single-podcast .partners-form div.moonray_forms input[type="submit"], .partners-form div.moonray_forms .single-podcast input[type="submit"] {
+  margin-bottom: 20px; }
+
 /*-- @component BLOG POST --*/
 .blog-post p:first-child {
   font-size: 20px;
