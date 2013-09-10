@@ -3,14 +3,17 @@
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="description" content="The most important word for success in entrepreneurship is 14 letters. Do you know what it is?">
   <title><?php if (is_front_page()) { echo "Do You Know The Most Important Word In Business? | " . wp_title(" | ", false, right); echo bloginfo("name"); } else { echo wp_title('', false); echo " | "; echo bloginfo("name"); } ?></title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="Do you know the most important word in business?">
-  <meta property="og:url" content="http://thefoundation.com/">
+  <meta property="og:title" content="<?php if ( is_single() ) {
+        single_post_title('', true); 
+    } else {
+       echo 'Do you know the most important word in business?';
+    }
+    ?>">
+  <meta property="og:url" content="<?php echo 'http://thefoundation.com'.$_SERVER['REQUEST_URI']; ?>">
   <meta property="og:site_name" content="The Foundation">
-  <meta property="og:description" content="Training on how to start a lucrative software business even if you don’t have any idea what to build or how to code. We excel at helping entrepreneurs start from nothing.">
   <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/images/facebook-thefoundation_logo.png">
   <script type="text/javascript"> var templateDir = "<?php bloginfo('template_directory') ?>"; </script>
   <script type="text/javascript" src="//use.typekit.net/xlc6nxv.js"></script>
@@ -43,7 +46,6 @@
     ga('send', 'pageview');
   </script>
   <?php wp_head(); ?>
-
 </head>
 
 <body <?php body_class(); ?>>
