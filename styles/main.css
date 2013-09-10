@@ -535,7 +535,8 @@ ul.socialcount {
   border-bottom: 1px solid #dddddd;
   margin-bottom: 70px; }
   .site-header.scroll-nav {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); }
 
 .page-template-home-page-php .scroll-page {
   padding-top: 40px; }
@@ -630,6 +631,9 @@ ul.socialcount {
       font-style: normal; }
   .hero .container {
     padding-bottom: 80px; }
+
+.fixed-scroll-page {
+  padding-top: 56px; }
 
 /*-- @component DISCOVER VIDEO --*/
 .discover-video {

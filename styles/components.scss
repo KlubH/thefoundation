@@ -19,6 +19,7 @@
   margin-bottom: 70px;
   &.scroll-nav {
     margin-bottom: 0;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
   }
 }
 
@@ -149,6 +150,9 @@
     padding-bottom: 80px;
 
   }
+}
+.fixed-scroll-page {
+  padding-top: 56px;
 }
 
 /*-- @component DISCOVER VIDEO --*/

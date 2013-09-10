@@ -5,7 +5,7 @@ Template Name: Home Page
 ?>
 <?php get_header(); ?>
 
-<header class="site-header fixed-top">
+<header class="site-header scroll-nav">
   <?php get_template_part( 'nav' ); ?>
 </header>
 
