@@ -211,10 +211,33 @@ var Menu = (function(){
 
 $j(document).ready(function(){
   TF.init(); 
-  if (setupZoom)
+  if (typeof(setupZoom) != "undefined")
     setupZoom();
   $j("div#fshare").click(function() { 
     $j(this).delay(1000*9).fadeOut(1000); 
     $j(this).next("#downloadpdf").delay(1000*10).fadeIn(2000);
   });
+  
+  $j('.moonray-form form').submit(function () {
+    $('.form-error-box').remove();
+    var count = $(this).find('input, select, textarea').each(function () {
+      $(this).blur();
+    }).filter('.moonray-form-state-error:not(.moonray-form-error-message)').length;
+    if (count)
+    {
+      $j('.postcard').prepend($('<div/>').addClass('form-error-box').text('Please fill out the fields in red.'));
+      $('html:not(:animated),body:not(:animated)').animate({scrollTop: 230}, 'slow', function () {
+        $('.form-error-box').each(function(i) {
+          $(this).css({ "position": "relative" });
+          for (var x = 1; x <= 2; x++) {
+            $(this).animate({ left: -10 }, 10).animate({ left: 0 }, 70).animate({ left: 10 }, 10).animate({ left: 0 }, 70);
+          }
+        });
+      });
+    }
+    window.setTimeout(function () {
+      $('.moonray-form-error-message').eq(0).css('left', $('.moonray-form-error-message').eq(1).css('left'));
+    }, 10);
+  });
+
 });

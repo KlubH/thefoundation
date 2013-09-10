@@ -249,6 +249,20 @@
     float: right;
   }
 }
+.postcard input.moonray-form-input.moonray-form-state-error, .postcard form select.moonray-form-state-error,  .postcard form textarea.moonray-form-state-error {
+  border: 1px solid #d72828;
+  border-color: #d72828 !important;
+}
+.postcard .form-error-box {
+  border: 1px solid #d72828;
+  padding: 10px;
+  text-align: center;
+  color: #d72828;
+  background: #FFDDD2;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+}
 .moonray-form-error-message {
   background: #fff;
   padding: 8px;
@@ -1196,7 +1210,7 @@ iframe {
   textarea,  input:not([type=submit]):not([type=image])  {
     width: 100%;
     @extend %styled-input;
-    padding: 5px 20px;
+    padding: 8px 20px 5px 20px;
     border-color: #E6E6E6;
     overflow: visible;
     border-radius: 5px;
@@ -1216,6 +1230,14 @@ iframe {
   }
   select {
     width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: #E6E6E6;
+    box-shadow: inset 0 1px 3px rgba(0, 1, 1, 0.15);
+    font-size: 16px;
+    &[name=Iamcurrent_233] {
+      margin-top: 0;
+    }
   }
   .btn-red {
     display: block;
