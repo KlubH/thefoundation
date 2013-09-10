@@ -9,6 +9,26 @@ Template Name: Tour Page
   <?php get_template_part( 'nav' ); ?>
 </header>
 
+<?php
+    $hero_text = get_post_meta( $post->ID, '_cmb_home_hero_text', true );
+    $hero_video_link = get_post_meta( $post->ID, '_cmb_home_hero_video', true ); ?>
+
+    <!-- @component SITE HEADER | @component HERO -->
+
+    <section class="hero container fixed-scroll-page">
+      <div class="row">
+        <h1><?php echo $hero_text; ?></h1>
+      </div>
+
+      <div id="video-modal" class="homepage-video">
+        <?php echo $hero_video_link; ?>
+      </div>
+
+      <div id="optin-source">
+       <?php get_template_part('component', 'optin-video'); ?>
+      </div>
+    </section>
+
   <!-- @component HOME CONTENT -->
   <section class="home-content">
     <div class="container text">
