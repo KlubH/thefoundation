@@ -1366,11 +1366,14 @@ iframe {
     color: $highlight;
     font-size: 20px;
   }
-  img {
-    padding: 5px;
-    border: 1px solid #eee;
-    border-radius: 5px;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2)
+  .grid-narrow {
+    text-align: center;
+    img {
+      padding: 5px;
+      border: 1px solid #eee;
+      border-radius: 5px;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2)
+    }
   }
 }
 

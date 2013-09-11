@@ -111,12 +111,11 @@ img {
 }
 
 @media screen and (max-width: 880px) {
-  .grid-narrow {
+  .grid-narrow, .grid-wide {
     width: 100%;
     margin-left: 0;
-  }
-  .grid-narrow {
-    width: 100%;
+    margin-bottom: 20px;
+    float: none;
   }
 }
 @media screen and (max-width: 748px) {
