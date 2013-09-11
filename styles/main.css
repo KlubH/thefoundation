@@ -149,7 +149,7 @@ input {
   width: 95%;
   margin: 0 auto; }
 
-.cf:before, .row:before, .media:before, .button-group:before, .optin:before, .optin .moonray-form-clearfix:before, .site-footer .container:before, .podcast-intro:before, .action-guide:before, .content-nav:before,
+.cf:before, .row:before, .media:before, .button-group:before, .optin:before, .optin .moonray-form-clearfix:before, .site-footer .container:before, .podcast-intro:before, .action-guide:before, .content-nav:before, .landingpage-content:before,
 .cf:after,
 .row:after,
 .media:after,
@@ -159,11 +159,12 @@ input {
 .site-footer .container:after,
 .podcast-intro:after,
 .action-guide:after,
-.content-nav:after {
+.content-nav:after,
+.landingpage-content:after {
   content: " ";
   display: table; }
 
-.cf:after, .row:after, .media:after, .button-group:after, .optin:after, .optin .moonray-form-clearfix:after, .site-footer .container:after, .podcast-intro:after, .action-guide:after, .content-nav:after {
+.cf:after, .row:after, .media:after, .button-group:after, .optin:after, .optin .moonray-form-clearfix:after, .site-footer .container:after, .podcast-intro:after, .action-guide:after, .content-nav:after, .landingpage-content:after {
   clear: both; }
 
 .row.row-narrow, .row-narrow.media {
@@ -1488,6 +1489,33 @@ iframe {
   .welcomegate-content p {
     font-size: 28px;
     margin-bottom: 20px; }
+
+.landingpage-content {
+  padding-top: 40px; }
+  .landingpage-content h1 {
+    margin-bottom: 40px; }
+  .landingpage-content p {
+    line-height: 1.5em; }
+  .landingpage-content ul {
+    line-height: 1.7em;
+    padding: 10px 0 0 30px; }
+  .landingpage-content li {
+    list-style: none; }
+  .landingpage-content li:before {
+    content: '\2022';
+    display: block;
+    position: relative;
+    max-width: 0px;
+    max-height: 0px;
+    left: -20px;
+    top: -0px;
+    color: #d72828;
+    font-size: 20px; }
+  .landingpage-content img {
+    padding: 5px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2); }
 
 .welcomegate-optin {
   margin: 40px auto; }
