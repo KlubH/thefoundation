@@ -1493,7 +1493,9 @@ iframe {
 .landingpage-content {
   padding-top: 40px; }
   .landingpage-content h1 {
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    text-align: left;
+    margin-left: 27px; }
   .landingpage-content p {
     line-height: 1.5em; }
   .landingpage-content ul {
@@ -1511,13 +1513,11 @@ iframe {
     top: -0px;
     color: #d72828;
     font-size: 20px; }
-  .landingpage-content .grid-narrow {
-    text-align: center; }
-    .landingpage-content .grid-narrow img {
-      padding: 5px;
-      border: 1px solid #eee;
-      border-radius: 5px;
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2); }
+  .landingpage-content img {
+    padding: 5px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2); }
 
 .welcomegate-optin {
   margin: 40px auto; }
@@ -1709,10 +1709,11 @@ img {
   .wpcf7-submit {
     width: 100%; } }
 @media screen and (max-width: 880px) {
-  .grid-narrow, .grid-wide {
+  .grid-narrow, .grid-wide, .grid-half {
     width: 100%;
     margin-left: 0;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px;
+    float: none; } }
 @media screen and (max-width: 748px) {
   .button-group {
     margin-bottom: 40px; }
@@ -1783,9 +1784,6 @@ img {
     border-top: 13px double #9d9d98;
     border-bottom: 4px solid #9d9d98;
     text-indent: -9999px; }
-
-  body {
-    padding-top: 50px; }
 
   .site-header.fixed-top {
     position: absolute;

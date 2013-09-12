@@ -111,7 +111,7 @@ img {
 }
 
 @media screen and (max-width: 880px) {
-  .grid-narrow, .grid-wide {
+  .grid-narrow, .grid-wide, .grid-half {
     width: 100%;
     margin-left: 0;
     margin-bottom: 20px;
@@ -196,9 +196,6 @@ img {
     border-top: 13px double #9d9d98;
     border-bottom: 4px solid #9d9d98;
     text-indent: -9999px;
-  }
-  body {
-    padding-top: 50px;
   }
   .site-header.fixed-top {
     position: absolute;

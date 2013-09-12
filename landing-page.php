@@ -11,7 +11,7 @@
   <script type="text/javascript" src="//use.typekit.net/xlc6nxv.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
-  <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/styles/main.css" />
+  <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/styles/main.css?v=6" />
   <script type="text/javascript"src="<?php echo get_template_directory_uri(); ?>/scripts/modernizr.js"></script>
   <script type="text/javascript"src="<?php echo get_template_directory_uri(); ?>/scripts/cookie.js"></script>
   <!--[if (gte IE 6)&(lte IE 8)]>
@@ -58,25 +58,16 @@
 <header class="welcomegate-header">
 	<div class="container cf">
 		<a class="logo-inverse pull-l" href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/images/logo_inverse.png" /></a>
-		<div class="pull-r">
-			<p>We've been featured by these guys:</p>
-			<img src="<?php bloginfo('template_url'); ?>/images/logos.png" />
-		</div>
 	</div>
 </header>
 
 <div class="container landingpage-content">
-    <div class="lead center">
+    <div class="lead">
       <h1><?php echo the_title(); ?></h1>
     </div>
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post();  ?>
   <div class="container">
-    <div class="grid-narrow">
-      <?php if ( has_post_thumbnail() ) the_post_thumbnail(); ?>
-    </div>
-    <div class="grid-wide">
       <?php the_content(); ?>
-    </div>
   </div>
   <?php endwhile; ?>
   <?php endif; ?>
@@ -119,37 +110,8 @@
 
 <?php }} ?>
 </div>
-
-<div class="container welcomegate-testimonials landing-testimonials">
-
-<!-- @component TESTIMONIALS -->
-
-<div class="row testimonials">
-<?php
-  $home_args3 = array(
-    'post_type' => 'testimonial',
-    'posts_per_page' => '3'
-  );
-  $testimonials = new WP_Query($home_args3);
-  if ($testimonials->have_posts()) {while ($testimonials->have_posts()) {$testimonials->the_post();
-    $testimonial_content = get_post_meta( $post->ID, '_cmb_testimonial_quote', true );
-    $testimonial_source_name = get_post_meta( $post->ID, '_cmb_testimonial_source_name', true );
-    $testimonial_source_title = get_post_meta( $post->ID, '_cmb_testimonial_source_title', true ); ?>
-
-    <div class="grid-third">
-      <div class="testimonial">
-        <blockquote><?php echo $testimonial_content; ?></blockquote>
-        <cite>
-          <strong><?php echo $testimonial_source_name; ?></strong>
-          <?php echo $testimonial_source_title; ?>
-        </cite>
-      </div>
-      <div class="bordered-image"><?php the_post_thumbnail('testimonial'); ?></div>
-    </div>
-
-  <?php }} ?>
-</div>
-
+<div class="center">
+		<img src="<?php bloginfo('template_url'); ?>/images/logos-inverted.png" />
 </div>
 
 <?php get_footer(); ?>
