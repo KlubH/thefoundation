@@ -9,12 +9,20 @@ img {
     margin-left: 0;
   }
   .home-content {
-    padding-top: 0!important;
+    padding-top: 0 !important;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
     .grid-third, .grid-fifth {
       margin-bottom: 20px;
     }
     .intro p {
       width: 100%;
+    }
+    h2 {
+      margin-top: 20px;
+    }
+    h2.sep {
+      padding-top: 20px;
     }
   }
   .podcast-archive .button-group .btn-light:last-child {
@@ -25,21 +33,12 @@ img {
     margin-left: 0;
   }
   .site-header {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .site-nav ul {
     li {
       padding-left: 0;
       padding-right: 20px;
-    }
-  }
-  .home .optin {
-    input {
-      width: 100%!important;
-      display: block;
-    }
-    input[type=submit] {
-      margin-top: 15px;
     }
   }
   .grid-third .bordered-image {
@@ -48,9 +47,15 @@ img {
   .content-nav {
     padding-bottom: 30px;
   }
-   .site-footer {
+  .site-footer {
     text-align: center;
+    margin: 0;
+    .container {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
     .logo {
+      margin-right: 0;
       margin-bottom: 20px;
     }
     .pull-l, .pull-r {
@@ -63,6 +68,9 @@ img {
     li {
       padding-left: 0;
       padding-right: 20px;
+      &:last-child {
+        padding-right: 0;
+      }
     }
   }
   .modal {
@@ -79,8 +87,15 @@ img {
       float: none;
     }
   }
-  .video-optin {
-    text-align: center;
+  .video-optin, .home-optin form {
+    text-align: center !important;
+    input {
+      width: 100% !important;
+      display: block;
+    }
+    input[type=submit] {
+      margin-top: 10px;
+    }
     form, h2 {
       width: 100%;
       float: none;
@@ -89,10 +104,14 @@ img {
       background:none;
     }
   }
+  .widget .optin .moonray-form .moonray-form-element-wrapper-contracted input[type="submit"], .fancy-widget .optin .moonray-form .moonray-form-element-wrapper-contracted input[type="submit"] {
+    margin-top: -10px;
+  }
   .people {
     .bordered-image {
       overflow: hidden;
-      position: relative;
+      float: left;
+      margin-right: 10px;
     }
     .popover {
       display: block;
@@ -108,6 +127,7 @@ img {
   .wpcf7-submit {
     width: 100%;
   }
+
 }
 
 @media screen and (max-width: 880px) {
@@ -116,6 +136,12 @@ img {
     margin-left: 0;
     margin-bottom: 20px;
     float: none;
+  }
+  .fb-comments, .fb-comments iframe[style], .fb-comments span[style] {
+    width: 100% !important;
+  }
+  .fb_edge_widget_with_comment.fb_iframe_widget > span {
+    width: 105px !important;
   }
 }
 @media screen and (max-width: 748px) {
@@ -162,12 +188,14 @@ img {
     font-size: 18px;
   }
   .content h1 {
-    font-size: 34px;
+    font-size: 25px;
   }
   .hero {
+    margin-top: 10px;
     h1 {
       padding-top: 0px;
-      font-size: 34px;
+      padding-bottom: 15px;
+      font-size: 30px;
     }
     .discover-video {
       padding-top: 20px;
@@ -188,6 +216,28 @@ img {
   .home .optin {
     width: 100%;
   }
+  .video-optin, .home-optin {
+    h2 {
+      font-size: 21px;
+      padding-top: 0;
+      margin-bottom: 10px;
+    }
+    input[type="email"] {
+      padding: 10px 15px !important;
+      font-size: 17px !important;
+    }
+    input[type="submit"] {
+      padding: 7px;
+      font-size: 20px;
+    }
+  }
+  .btn-green {
+    padding: 7px;
+    font-size: 20px;
+  }
+  .recent {
+    padding-bottom: 0px;
+  }
   .mobile-nav-toggle {
     display: block;
     margin-top: 8px;
@@ -198,8 +248,11 @@ img {
     text-indent: -9999px;
   }
   .site-header.fixed-top {
-    position: absolute;
+    position: relative;
     top: 0;
+  }
+  .fixed-scroll-page {
+    padding-top: 0;
   }
   .site-nav ul {
     margin-top: 10px;
@@ -225,7 +278,7 @@ img {
     font-size: 14px;
     margin-left: -98px;
   }
-  .row.row-narrow, .row-narrow.media {
+  .row.row-narrow {
     width: 100%;
   }
   .postcard input:not([type=submit]), .postcard textarea {
@@ -241,17 +294,125 @@ img {
   .grid-narrow.application-aside {
     overflow: hidden;
   }
+  ul.socialcount {
+    text-align: center;
+  }
+  .scroll-page.sub-nav {
+    padding: 0 0 15px 0;
+    .pull-r {
+      float: none;
+      text-align: center;
+    }
+  }
+  .partners-form form {
+    width: 90%;
+    .moonray_input {
+      font-size: 16px;
+      line-height: 24px;
+      padding: 8px 13px !important;
+    }
+  }
 
 }
+@media screen and (max-width: 480px) {
+  .site-footer li {
+    padding-right: 10px;
+    font-size: 13px;
+  }
+  .people {
+    .bordered-image {
+      margin: 0 10px 10px 0;
+      width: 85px;
+    }
+  }
+  .podcast-intro .pull-r, .podcast-intro .pull-l {
+    width: 100%;
+    margin-left: 0;
+    float: none;
+    p {
+      font-size: 18px;
+    }
+    &.pull-r {
+      text-align: center;
+      img {
+        max-width: 100%;
+        width: 180px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .timeline-event {
+    h3 {
+      padding-top: 16px;
+    }
+    .media-content {
+      margin-left: -30px;
+      padding-left: 45px;
+    }
+    .media-image {
+      width: 60px;
+      height: 60px;
+      font-size: 18px;
+      padding-top: 21px;
+    }
+  }
+  h1 {
+    font-size: 24px;
+  }
+  .content h1 {
+    font-size: 20px;
+  }
+  .application h1 {
+    font-size: 26px;
+  }
+  h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .content h2 {
+    font-size: 18px;
+  }
+  .video-optin h2, .home-optin h2 {
+    font-size: 18px;
+  }
+  .application h2 {
+    font-size: 16px;
+  }
+  h3, .content h3, .post-single h3, .blog-post h3 {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  .meta h4 {
+    text-align: center;
+  }
+
+}
+
+
 
 @media screen and (max-width: 800px) {
   .wistia_embed {
     height: 450px;
   }
 }
+@media screen and (max-width: 770px) {
+  .wistia_embed {
+    height: 408px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .wistia_embed {
+    height: 339px;
+  }
+}
 @media screen and (max-width: 590px) {
   .wistia_embed {
     height: 300px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .wistia_embed {
+    height: 253px;
   }
 }
 @media screen and (max-width: 330px) {

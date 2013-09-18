@@ -1092,6 +1092,9 @@ iframe {
     display: block;
     font-size: 0.8em;
   }
+  .grid-wide.pull-r {
+    float: right !important;
+  }
 }
 
 .apply-now {
@@ -1219,9 +1222,6 @@ iframe {
     overflow: visible;
     border-radius: 5px;
     font-style: normal;
-    &:focus {
-      border-color: darken(#E6E6E6, 15%);
-    }
   }
   textarea,  input:not([type=submit]):not([type=image]), select {
     margin-top: 15px;
@@ -1263,6 +1263,7 @@ iframe {
   border-radius: 10px;
   padding: 20px;
   margin-top: 47px;
+  overflow: hidden;
   h3 {
     font-size: 23px;
   }
@@ -1301,6 +1302,11 @@ iframe {
       margin-left: 10px;      
       margin-right: 0;
     }
+  }
+  &.pull-l {
+    margin-right: 8.333%;
+    margin-left: 0;
+    float: left !important;
   }
 }
 
@@ -1374,6 +1380,10 @@ iframe {
     border-radius: 5px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2)
   }
+}
+.landing-featured {
+  margin-bottom: 20px;
+  font-size: 15px;
 }
 
 .welcomegate-optin {

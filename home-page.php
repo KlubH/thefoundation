@@ -133,7 +133,7 @@ Template Name: Home Page
 <div class="grid-narrow">
 
 <!-- @component TESTIMONIALS -->
-  <div class="row testimonials landing-testimonials">
+  <div class="row testimonials text landing-testimonials">
   <?php
     $home_args3 = array(
       'post_type' => 'testimonial',

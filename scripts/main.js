@@ -160,14 +160,14 @@ var Menu = (function(){
       if (!Modernizr.touch){
         if (curPage === "home") { 
          $(window).on('scroll resize', function(){
-            if ($(this).scrollTop() > c.$homeMenuOffset.top) {
+            if (c.$homeMenuOffset && $(this).scrollTop() > c.$homeMenuOffset.top) {
               Menu.fixNav(c.$homeMenu, "fix");
               Menu.animateNav("fix");     
             } else {
               Menu.fixNav(c.$homeMenu, "unfix");
               Menu.animateNav("unfix");
             }
-          });   
+          });
         } 
       }
       c.$menuToggle.on("click", function(e){
@@ -240,4 +240,11 @@ $j(document).ready(function(){
     }, 10);
   });
 
+  var wistiaiframe = $('iframe.wistia_embed');
+  var wistiaResize = function () {
+    wistiaiframe.height(Math.floor(wistiaiframe.width() * 521 / 920));
+  }
+  wistiaResize();
+  wistiaiframe.load(wistiaResize);
+  $(window).resize(wistiaResize)
 });

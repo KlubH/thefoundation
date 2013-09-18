@@ -16,7 +16,16 @@ Template Name: Application Page with Sidebar Left
 
   <div class="row">
 
-    <div class="grid-narrow text application-aside">
+    <div class="grid-wide pull-r">
+      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+      <h2 class="apply-now">Apply Now!</h2>
+      <div class="postcard">
+      <?php the_content(); ?>
+      </div>
+      <?php endwhile; endif; ?>
+    </div>
+
+    <div class="grid-narrow text application-aside pull-l">
       <h3>Online From Anywhere</h3>
       <div class="laptop-map">
         <img src="<?php echo get_bloginfo('template_directory'); ?>/images/laptop-map.png" alt="">
@@ -55,15 +64,6 @@ Template Name: Application Page with Sidebar Left
     <?php }} ?>
      </div>
 
-    </div>
-
-    <div class="grid-wide">
-      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-      <h2 class="apply-now">Apply Now!</h2>
-      <div class="postcard">
-      <?php the_content(); ?>
-      </div>
-      <?php endwhile; endif; ?>
     </div>
 
   </div>

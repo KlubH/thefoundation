@@ -1,5 +1,5 @@
 <!-- @component TESTIMONIALS -->
-<div class="row testimonials">
+<div class="row testimonials landing-testimonials">
 
   <?php
     $home_args3 = array(

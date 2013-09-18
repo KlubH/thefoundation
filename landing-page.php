@@ -11,7 +11,7 @@
   <script type="text/javascript" src="//use.typekit.net/xlc6nxv.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
-  <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/styles/main.css?v=6" />
+  <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/styles/main.css?v=7" />
   <script type="text/javascript"src="<?php echo get_template_directory_uri(); ?>/scripts/modernizr.js"></script>
   <script type="text/javascript"src="<?php echo get_template_directory_uri(); ?>/scripts/cookie.js"></script>
   <!--[if (gte IE 6)&(lte IE 8)]>
@@ -111,7 +111,8 @@
 <?php }} ?>
 </div>
 <div class="center">
-		<img src="<?php bloginfo('template_url'); ?>/images/logos-inverted.png" />
+		<div class="landing-featured">We've been featured by these guys:</div>
+    <img src="<?php bloginfo('template_url'); ?>/images/logos-inverted.png" />
 </div>
 
 <?php get_footer(); ?>

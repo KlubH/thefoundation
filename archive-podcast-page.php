@@ -21,11 +21,11 @@
 
         <!-- @component PODCAST INTRO -->
         <div class="podcast-intro text lead">
-          <div class="pull-l">
-            <?php the_content(); ?>
-          </div>
           <div class="thumb pull-r">
             <?php the_post_thumbnail(); ?>
+          </div>
+          <div class="pull-l">
+            <?php the_content(); ?>
           </div>
         </div>
 

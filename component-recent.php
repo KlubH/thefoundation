@@ -8,7 +8,7 @@
     <?php
       $home_args4 = array(
         'post_type' => 'post',
-        'posts_per_page' => '3'
+        'posts_per_page' => '5'
       );
       $blogs = new WP_Query($home_args4);
       if ($blogs->have_posts()) {while ($blogs->have_posts()) {$blogs->the_post(); ?>

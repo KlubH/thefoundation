@@ -2,6 +2,7 @@
 
 <?php
   if (isset($_POST["url"])) {
+  	$oldurl=$_POST["url"];
   	$url=$_POST["url"];
   	$url=str_replace("http://","",$url);
   	$url=str_replace(site_url() . '/welcome',"",$url);
@@ -115,7 +116,7 @@
       <form class="moonray-form-clearfix ga_submit pa_optin" action="https://forms.moon-ray.com/v2.4/form_processor.php?" rel="opt-in;opt-in;welcome-page" method="post">
         <div class="moonray-form-element-wrapper moonray-form-element-wrapper-alignment-left moonray-form-input-type-email"><input name="email" type="email" class="moonray-form-input" id="mr-field-element-6871664430" required value placeholder="You@domain.com"/></div>
         <div class="moonray-form-element-wrapper moonray-form-element-wrapper-alignment-left moonray-form-input-type-image"><input type="submit" name="submit" value="Send Now" class="moonray-form-input" id="mr-field-element-684993176953"\ data-lastDisplayVal="&quot;Submit&quot;"/></div>
-        <div class="moonray-form-element-wrapper moonray-form-input-type-hidden"><input name="redirect" type="hidden" value="http://thefoundation.com/blog-redirect.php?a=<? echo $url_r; ?>"/></div>
+        <div class="moonray-form-element-wrapper moonray-form-input-type-hidden"><input name="redirect" type="hidden" value="<?php echo $oldurl; ?>"/></div>
         <div class="moonray-form-element-wrapper moonray-form-input-type-hidden"><input name="afft_" type="hidden" value/></div>
         <div class="moonray-form-element-wrapper moonray-form-input-type-hidden"><input name="aff_" type="hidden" value/></div>
         <div class="moonray-form-element-wrapper moonray-form-input-type-hidden"><input name="sess_" type="hidden" value/></div>
@@ -162,7 +163,7 @@
 </div>
 
 <p class="skip">
-	or you can <a href="<?php echo $url; ?>" class="ga_click" rel="skip-this-step;skip-this-step;skip-this-step">Skip this step &rarr;</a>
+	or you can <a href="<?php echo $oldurl; ?>" class="ga_click" rel="skip-this-step;skip-this-step;skip-this-step">Skip this step &rarr;</a>
 </p>
 
 </div>
