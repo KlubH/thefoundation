@@ -36,7 +36,6 @@ Template Name: Tour Page
         <?php get_template_part('component', 'intro'); ?>
       <?php endwhile; ?>
       <?php endif; ?>
-
       <h2 class="sep"><?php echo $headline_press; ?></h2>
 
       <?php get_template_part('component', 'pressfeatures'); ?>

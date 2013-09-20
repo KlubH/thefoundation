@@ -87,6 +87,16 @@ img {
       float: none;
     }
   }
+  .landingpage-content .landing-optin {
+    .moonray-form-input-type-email, .moonray-form-input-type-image {
+      width: 100%;
+      float: none;
+      input {
+        width: 100%;
+        padding: 7px;
+      }
+    }
+  }
   .video-optin, .home-optin form {
     text-align: center !important;
     input {
@@ -128,6 +138,19 @@ img {
     width: 100%;
   }
 
+  .red-icon {
+    display: inline-block;
+    img {
+      padding-right: 10px;
+      position: relative;
+      bottom: -3px;
+    }
+  }
+  .grid-third h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    margin-top: 25px;
+  }
 }
 
 @media screen and (max-width: 880px) {
@@ -142,6 +165,12 @@ img {
   }
   .fb_edge_widget_with_comment.fb_iframe_widget > span {
     width: 105px !important;
+  }
+  .recent .grid-half:first-child {
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+    background: url("../images/sep.png") no-repeat center bottom;
+    text-align: left;
   }
 }
 @media screen and (max-width: 748px) {
@@ -237,6 +266,9 @@ img {
   }
   .recent {
     padding-bottom: 0px;
+    .grid-half {
+      margin-bottom: 50px;
+    }
   }
   .mobile-nav-toggle {
     display: block;
@@ -360,13 +392,13 @@ img {
     font-size: 24px;
   }
   .content h1 {
-    font-size: 20px;
+    font-size: 24px;
   }
   .application h1 {
     font-size: 26px;
   }
   h2 {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 20px;
   }
   .content h2 {
@@ -378,14 +410,20 @@ img {
   .application h2 {
     font-size: 16px;
   }
-  h3, .content h3, .post-single h3, .blog-post h3 {
+  .content h3, .post-single h3, .blog-post h3 {
     font-size: 16px;
     margin-bottom: 25px;
   }
   .meta h4 {
     text-align: center;
   }
-
+  .wpcf7 input:not([type=submit]):not([type=checkbox]):not([type=radio]), .wpcf7 textarea {
+    padding: 10px 15px;
+  }
+  .post-single p, .blog-single p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 
 

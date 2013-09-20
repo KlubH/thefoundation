@@ -412,7 +412,7 @@ margin-right: 20px;
 .testimonials {
   text-align: center;
   .bordered-image {
-    margin-top: 30px;
+    margin-top: 24px;
     display: inline-block;
   }
 }
@@ -445,14 +445,14 @@ margin-right: 20px;
   }
   &:after {
     position: absolute;
-    bottom: -22px;
+    bottom: -18px;
     left: 50%;
-    margin-left: -22px;
+    margin-left: -18px;
     width: 0px;
     height: 0px;
     border-style: solid;
     content: "";
-    border-width: 22px 22px 0 22px;
+    border-width: 18px 18px 0 18px;
     border-color: $highlight transparent transparent transparent;
   }
 }
@@ -1074,6 +1074,16 @@ iframe {
   }
 }
 
+/*-- @component CONTACT FORM --*/
+.wpcf7 {
+  label {
+    margin-bottom: 5px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+}
+
 /*-- @component APPLICATION PAGE --*/
 
 .application {
@@ -1352,6 +1362,7 @@ iframe {
     margin-bottom: 40px;
     text-align: left;
     margin-left: 27px;
+    font-size: 45px;
   }
   p {
     line-height: 1.5em;
@@ -1378,11 +1389,25 @@ iframe {
     padding: 5px;
     border: 1px solid #eee;
     border-radius: 5px;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2)
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+    max-width: 97%;
+  }
+  .landing-optin {
+    .moonray-form-input-type-email {
+      width: 250px;
+      input {
+        font-size: 20px;
+        padding: 15px;
+      }      
+    }
+    .moonray-form-input-type-image input {
+      font-size: 20px;
+      padding: 15px;
+    }
   }
 }
 .landing-featured {
-  margin-bottom: 20px;
+  margin: 60px 20px 20px 20px;
   font-size: 15px;
 }
 
@@ -1402,7 +1427,7 @@ iframe {
   margin-bottom:50px;
   font-weight: 600;
   a {
-    text-decoration: none;
+    color: #000;
   }
 }
 

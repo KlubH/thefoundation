@@ -93,7 +93,7 @@ input, select {
   Regular "proxima-nova"  400 normal  
   Semi-Bold  "proxima-nova"  600 normal 
 */
-body {
+body, textarea {
   font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif; }
 
 h1, h2, h3, h4, .widget:not(.join-widget):not(.optin-widget) li a, .fancy-widget:not(.join-widget):not(.optin-widget) li a {
@@ -352,6 +352,12 @@ input {
   color: #000; }
 .text ol, .media .media-content ol, .action-guide ol, .widget .optin ol, .fancy-widget .optin ol, .widget-content ol, .widget ul ol, .fancy-widget ul ol, .postcard ol {
   margin-left: 3em; }
+
+/*-- @module RED-ICONS --*/
+.red-icon {
+  display: block;
+  text-align: center;
+  padding-bottom: 10px; }
 
 /*-- @module TOP-ICONS --*/
 [class*="top-icon"] {
@@ -822,7 +828,7 @@ ul.socialcount {
 .testimonials {
   text-align: center; }
   .testimonials .bordered-image {
-    margin-top: 30px;
+    margin-top: 24px;
     display: inline-block; }
 
 .testimonial {
@@ -847,14 +853,14 @@ ul.socialcount {
       display: block; }
   .testimonial:after {
     position: absolute;
-    bottom: -22px;
+    bottom: -18px;
     left: 50%;
-    margin-left: -22px;
+    margin-left: -18px;
     width: 0px;
     height: 0px;
     border-style: solid;
     content: "";
-    border-width: 22px 22px 0 22px;
+    border-width: 18px 18px 0 18px;
     border-color: #d72828 transparent transparent transparent; }
 
 /*-- @component CASE STUDIES --*/
@@ -1282,6 +1288,12 @@ iframe {
   .sign-up-thanks h1 {
     font-size: 45px; }
 
+/*-- @component CONTACT FORM --*/
+.wpcf7 label {
+  margin-bottom: 5px; }
+.wpcf7 p {
+  margin-bottom: 20px; }
+
 /*-- @component APPLICATION PAGE --*/
 .application {
   padding-top: 110px; }
@@ -1499,7 +1511,8 @@ iframe {
   .landingpage-content h1 {
     margin-bottom: 40px;
     text-align: left;
-    margin-left: 27px; }
+    margin-left: 27px;
+    font-size: 45px; }
   .landingpage-content p {
     line-height: 1.5em; }
   .landingpage-content ul {
@@ -1521,10 +1534,19 @@ iframe {
     padding: 5px;
     border: 1px solid #eee;
     border-radius: 5px;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2); }
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+    max-width: 97%; }
+  .landingpage-content .landing-optin .moonray-form-input-type-email {
+    width: 250px; }
+    .landingpage-content .landing-optin .moonray-form-input-type-email input {
+      font-size: 20px;
+      padding: 15px; }
+  .landingpage-content .landing-optin .moonray-form-input-type-image input {
+    font-size: 20px;
+    padding: 15px; }
 
 .landing-featured {
-  margin-bottom: 20px;
+  margin: 60px 20px 20px 20px;
   font-size: 15px; }
 
 .welcomegate-optin {
@@ -1539,7 +1561,7 @@ iframe {
   margin-bottom: 50px;
   font-weight: 600; }
   .skip a {
-    text-decoration: none; }
+    color: #000; }
 
 .landing-testimonials .testimonial {
   background: #eeeeee;
@@ -1701,6 +1723,13 @@ img {
     width: 100%;
     float: none; }
 
+  .landingpage-content .landing-optin .moonray-form-input-type-email, .landingpage-content .landing-optin .moonray-form-input-type-image {
+    width: 100%;
+    float: none; }
+    .landingpage-content .landing-optin .moonray-form-input-type-email input, .landingpage-content .landing-optin .moonray-form-input-type-image input {
+      width: 100%;
+      padding: 7px; }
+
   .video-optin, .home-optin form {
     text-align: center !important; }
     .video-optin input, .home-optin form input {
@@ -1731,7 +1760,19 @@ img {
       display: none; }
 
   .wpcf7-submit {
-    width: 100%; } }
+    width: 100%; }
+
+  .red-icon {
+    display: inline-block; }
+    .red-icon img {
+      padding-right: 10px;
+      position: relative;
+      bottom: -3px; }
+
+  .grid-third h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    margin-top: 25px; } }
 @media screen and (max-width: 880px) {
   .grid-narrow, .grid-wide, .grid-half {
     width: 100%;
@@ -1743,7 +1784,13 @@ img {
     width: 100% !important; }
 
   .fb_edge_widget_with_comment.fb_iframe_widget > span {
-    width: 105px !important; } }
+    width: 105px !important; }
+
+  .recent .grid-half:first-child {
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+    background: url("../images/sep.png") no-repeat center bottom;
+    text-align: left; } }
 @media screen and (max-width: 748px) {
   .button-group {
     margin-bottom: 40px; }
@@ -1826,6 +1873,8 @@ img {
 
   .recent {
     padding-bottom: 0px; }
+    .recent .grid-half {
+      margin-bottom: 50px; }
 
   .mobile-nav-toggle {
     display: block;
@@ -1932,13 +1981,13 @@ img {
     font-size: 24px; }
 
   .content h1 {
-    font-size: 20px; }
+    font-size: 24px; }
 
   .application h1 {
     font-size: 26px; }
 
   h2 {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 20px; }
 
   .content h2 {
@@ -1950,12 +1999,19 @@ img {
   .application h2 {
     font-size: 16px; }
 
-  h3, .content h3, .post-single h3, .blog-post h3 {
+  .content h3, .post-single h3, .blog-post h3 {
     font-size: 16px;
     margin-bottom: 25px; }
 
   .meta h4, .meta .widget:not(.join-widget):not(.optin-widget) li a, .widget:not(.join-widget):not(.optin-widget) li .meta a, .meta .fancy-widget:not(.join-widget):not(.optin-widget) li a, .fancy-widget:not(.join-widget):not(.optin-widget) li .meta a {
-    text-align: center; } }
+    text-align: center; }
+
+  .wpcf7 input:not([type=submit]):not([type=checkbox]):not([type=radio]), .wpcf7 textarea {
+    padding: 10px 15px; }
+
+  .post-single p, .blog-single p {
+    font-size: 16px;
+    line-height: 1.5; } }
 @media screen and (max-width: 800px) {
   .wistia_embed {
     height: 450px; } }
