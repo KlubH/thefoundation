@@ -11,7 +11,7 @@
   <script type="text/javascript" src="//use.typekit.net/xlc6nxv.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
-  <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/styles/main.css?v=7" />
+  <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/styles/main.css?v=12" />
   <script type="text/javascript"src="<?php echo get_template_directory_uri(); ?>/scripts/modernizr.js"></script>
   <script type="text/javascript"src="<?php echo get_template_directory_uri(); ?>/scripts/cookie.js"></script>
   <!--[if (gte IE 6)&(lte IE 8)]>
@@ -71,44 +71,6 @@
   </div>
   <?php endwhile; ?>
   <?php endif; ?>
-</div>
-
-<div class="container welcomegate-optin">
-	<?php
-  $optin_args = array(
-    'post_type' => 'component',
-    'tax_query' => array(
-      array(
-        'taxonomy' => 'component-type',
-        'field' => 'slug',
-        'terms' => 'get-case-study'
-      )
-    )
-  );
-  $optin = new WP_Query($optin_args);
-  if ($optin->have_posts()) {while ($optin->have_posts()) {$optin->the_post();
-    $form_code = get_post_meta( $post->ID, '_cmb_optin_embed', true ); ?>
-
-    <!-- @component OPTIN -->
-    <div class="optin home-optin lead">
-      <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/themes/smoothness/jquery-ui.css" type="text/css" /><link rel="stylesheet" href="//www1.moon-ray.com/v2.4/include/formEditor/gencss.php?uid=p2c7381f14" type="text/css" /><script type="text/javascript" src="//www1.moon-ray.com/v2.4/include/formEditor/genjs-v2.php?html=false&uid=p2c7381f14"></script>
-      <form class="moonray-form-clearfix ga_submit pa_optin" rel="opt-in;opt-in;landing-page" action="https://forms.moon-ray.com/v2.4/form_processor.php?" method="post">
-        <div class="moonray-form-element-wrapper moonray-form-element-wrapper-alignment-left moonray-form-input-type-email"><input name="email" type="email" class="moonray-form-input" id="mr-field-element-6871664430" required value placeholder="You@domain.com"/></div>
-        <div class="moonray-form-element-wrapper moonray-form-element-wrapper-alignment-left moonray-form-input-type-image"><input type="submit" name="submit" value="Send Now" class="moonray-form-input" id="mr-field-element-684993176953"\ data-lastDisplayVal="&quot;Submit&quot;"/></div>
-        <div class="moonray-form-element-wrapper moonray-form-input-type-hidden"><input name="redirect" type="hidden" value="http://thefoundation.com/blog-redirect.php?a=<? echo $url_r; ?>"/></div>
-        <div class="moonray-form-element-wrapper moonray-form-input-type-hidden"><input name="afft_" type="hidden" value/></div>
-        <div class="moonray-form-element-wrapper moonray-form-input-type-hidden"><input name="aff_" type="hidden" value/></div>
-        <div class="moonray-form-element-wrapper moonray-form-input-type-hidden"><input name="sess_" type="hidden" value/></div>
-        <div class="moonray-form-element-wrapper moonray-form-input-type-hidden"><input name="ref_" type="hidden" value/></div>
-        <div class="moonray-form-element-wrapper moonray-form-input-type-hidden"><input name="own_" type="hidden" value/></div>
-        <div class="moonray-form-element-wrapper moonray-form-input-type-hidden"><input name="oprid" type="hidden" value/></div>
-        <div class="moonray-form-element-wrapper moonray-form-input-type-hidden"><input name="contact_id" type="hidden" value/></div>
-        <div class="moonray-form-element-wrapper moonray-form-input-type-hidden"><input name="uid" type="hidden" value="p2c7381f14"/></div>
-        <span class="moonray-form-clearfix"></span>
-      </form>
-    </div>
-
-<?php }} ?>
 </div>
 <div class="center">
 		<div class="landing-featured">We've been featured by these guys:</div>

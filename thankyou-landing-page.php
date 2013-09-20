@@ -10,8 +10,8 @@ Template Name: Thank You (for Landing Page)
 </header>
 
 <div class="container scroll-page row application">
-  <h1 class="center">You Are Almost Done.</h1>
-  <h2 class="center">Check your email now and click the confirmation link for your free gift.</h2>
+  <h1 class="center">Check Your Inbox</h1>
+  <h2 class="center">We just sent you an email with a link to our private blog. Look for an email from Dane Maxwell.</h2>
 
   <div class="row">
 
