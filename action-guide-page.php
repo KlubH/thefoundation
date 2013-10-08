@@ -15,7 +15,8 @@ Template Name: Action Guides Page
 
   <?php
   $ag_args = array(
-    'post_type' => 'action-guide'
+    'post_type' => 'action-guide',
+    'posts_per_page' => 100
   );
   $action_guides = new WP_Query($ag_args);
   if ($action_guides->have_posts()) {while ($action_guides->have_posts()) {$action_guides->the_post();
