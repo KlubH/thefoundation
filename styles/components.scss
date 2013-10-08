@@ -318,6 +318,26 @@
     width: 65%;
   }
 }
+.contest .video-optin .moonray-form-input-type-email {
+  width: 61%;
+  input:not([type=submit]):not([type=checkbox]):not([type=radio]) {
+    padding: 15px 14px;
+  }
+}
+.countdown {
+  margin-bottom: 30px;
+  font-size: 22px;
+  color: #636363;
+  em {
+    font-style: normal;
+    background: #E9E9E9;
+    padding: 10px 1px 10px 0;
+    width: 45px;
+    display: inline-block;
+    border-radius: 2px;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
+  }
+}
 
 .home-optin {
   form {

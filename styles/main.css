@@ -144,7 +144,7 @@ input {
   -moz-box-sizing: border-box; }
 
 .container {
-  max-width: 960px;
+  max-width: 923px;
   width: 95%;
   margin: 0 auto; }
 
@@ -231,7 +231,7 @@ input {
   font-size: 24px;
   font-weight: 600;
   font-family: inherit;
-  padding: 15px 25px;
+  padding: 15px 20px;
   font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
   text-decoration: none;
   border-radius: 10px;
@@ -631,7 +631,7 @@ ul.socialcount {
   margin-top: 35px;
   text-align: center; }
   .hero h1 {
-    padding: 30px 0 35px 0;
+    padding: 0 0 25px 0;
     font-size: 53px; }
     .hero h1 em {
       font-style: normal; }
@@ -765,6 +765,24 @@ ul.socialcount {
     float: right;
     width: 65%; }
 
+.contest .video-optin .moonray-form-input-type-email {
+  width: 61%; }
+  .contest .video-optin .moonray-form-input-type-email input:not([type=submit]):not([type=checkbox]):not([type=radio]) {
+    padding: 15px 14px; }
+
+.countdown {
+  margin-bottom: 30px;
+  font-size: 22px;
+  color: #636363; }
+  .countdown em {
+    font-style: normal;
+    background: #E9E9E9;
+    padding: 10px 1px 10px 0;
+    width: 45px;
+    display: inline-block;
+    border-radius: 2px;
+    text-shadow: 1px 1px 0px white; }
+
 .home-optin form {
   background-color: #fffdf1;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
@@ -863,6 +881,19 @@ ul.socialcount {
     border-width: 18px 18px 0 18px;
     border-color: #d72828 transparent transparent transparent; }
 
+/*-- @component ABOUT BOX --*/
+.about-box {
+  background: #DAECF5;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px; }
+  .about-box h4, .about-box .widget:not(.join-widget):not(.optin-widget) li a, .widget:not(.join-widget):not(.optin-widget) li .about-box a, .about-box .fancy-widget:not(.join-widget):not(.optin-widget) li a, .fancy-widget:not(.join-widget):not(.optin-widget) li .about-box a {
+    margin-bottom: 15px;
+    font-size: 22px; }
+  .about-box p {
+    font-size: 15px;
+    line-height: 24px; }
+
 /*-- @component CASE STUDIES --*/
 .case-studies h3 a {
   text-decoration: none;
@@ -893,7 +924,9 @@ ul.socialcount {
 .more-link {
   display: block;
   padding-top: 20px;
-  text-align: right; }
+  text-align: left;
+  text-decoration: none;
+  font-weight: bold; }
 
 .post-single, .blog-post {
   position: relative; }
@@ -934,12 +967,8 @@ ul.socialcount {
 
 /*-- @component BLOG POST --*/
 .blog-post p:first-child {
-  font-size: 20px;
-  color: #888888;
-  line-height: 1.4;
-  margin-bottom: 40px;
   font-family: "ff-tisa-web-pro", Georgia, serif;
-  font-weight: 400; }
+  font-weight: bold; }
 
 .comment-count {
   margin-bottom: 25px;
@@ -949,10 +978,13 @@ ul.socialcount {
   .comment-count .right {
     float: right;
     background: url("../images/comment_bubble.png") no-repeat left center;
-    padding-left: 25px;
-    display: inline-block; }
+    padding-left: 23px;
+    display: inline-block;
+    font-size: 15px; }
     .comment-count .right a {
-      color: #000; }
+      color: #666;
+      text-decoration: none;
+      border-bottom: 1px solid #ccc; }
     .comment-count .right a:hover {
       color: #d72828; }
   .comment-count.no-margin {
@@ -1060,7 +1092,10 @@ ul.socialcount {
   .meta h4, .meta .widget:not(.join-widget):not(.optin-widget) li a, .widget:not(.join-widget):not(.optin-widget) li .meta a, .meta .fancy-widget:not(.join-widget):not(.optin-widget) li a, .fancy-widget:not(.join-widget):not(.optin-widget) li .meta a {
     font-size: 18px;
     color: #000;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-family: "proxima-nova", "Proxima Nova", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    text-align: center; }
 
 .post-single .meta {
   padding: 30px 0;
@@ -1289,10 +1324,39 @@ iframe {
     font-size: 45px; }
 
 /*-- @component CONTACT FORM --*/
-.wpcf7 label {
-  margin-bottom: 5px; }
-.wpcf7 p {
-  margin-bottom: 20px; }
+.contact-form h1 {
+  color: #000; }
+.contact-form .postcard {
+  padding: 20px; }
+  .contact-form .postcard:before {
+    background-image: none; }
+  .contact-form .postcard .wpcf7 label {
+    margin-bottom: 0px; }
+  .contact-form .postcard .wpcf7 p {
+    margin-bottom: 20px; }
+  .contact-form .postcard .wpcf7 input:not([type=submit]):not([type=checkbox]):not([type=radio]) {
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+    padding: 8px 20px 5px 20px; }
+  .contact-form .postcard .wpcf7 div.wpcf7-validation-errors {
+    border: 1px solid #d72828;
+    padding: 10px 20px;
+    text-align: center;
+    color: #d72828;
+    background: #FFDDD2;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+    line-height: 1.5em; }
+  .contact-form .postcard .wpcf7 span.wpcf7-not-valid-tip {
+    background: #fff;
+    padding: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    color: #d72828;
+    border: 1px solid #d72828;
+    position: static;
+    display: block; }
 
 /*-- @component APPLICATION PAGE --*/
 .application {
@@ -1833,6 +1897,9 @@ img {
   .content h1 {
     font-size: 25px; }
 
+  .blog-archive .post h1 a, .post-single h1 a, .blog-post h1 a {
+    color: #d72828; }
+
   .hero {
     margin-top: 10px; }
     .hero h1 {
@@ -1855,6 +1922,11 @@ img {
 
   .home .optin {
     width: 100%; }
+
+  .comment-count {
+    padding-left: 0; }
+    .comment-count .right {
+      float: left; }
 
   .video-optin h2, .home-optin h2 {
     font-size: 21px;
@@ -1943,7 +2015,13 @@ img {
     .partners-form form .moonray_input {
       font-size: 16px;
       line-height: 24px;
-      padding: 8px 13px !important; } }
+      padding: 8px 13px !important; }
+
+  .countdown {
+    font-size: 17px; }
+    .countdown em {
+      padding: 8px 1px 8px 0;
+      width: 33px; } }
 @media screen and (max-width: 480px) {
   .site-footer li {
     padding-right: 10px;
@@ -1952,6 +2030,16 @@ img {
   .people .bordered-image {
     margin: 0 10px 10px 0;
     width: 85px; }
+
+  .countdown .counter {
+    font-size: 13px;
+    font-weight: bold; }
+  .countdown em {
+    padding: 5px 2px 5px 2px;
+    width: 20px; }
+  .countdown .title {
+    display: block;
+    padding-bottom: 10px; }
 
   .podcast-intro .pull-r, .podcast-intro .pull-l {
     width: 100%;
@@ -2011,7 +2099,19 @@ img {
 
   .post-single p, .blog-single p {
     font-size: 16px;
-    line-height: 1.5; } }
+    line-height: 1.5; }
+
+  .tour-page .home-optin {
+    background-color: #fffdf1;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 15px; }
+    .tour-page .home-optin p {
+      width: 100%; }
+    .tour-page .home-optin form {
+      background-color: transparent;
+      box-shadow: none;
+      padding: 0; } }
 @media screen and (max-width: 800px) {
   .wistia_embed {
     height: 450px; } }

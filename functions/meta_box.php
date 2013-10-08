@@ -121,7 +121,7 @@ function cmb_sample_metaboxes( array $meta_boxes ) {
     'show_on' => array( 
       'key' => 'taxonomy', 
       'value' => array( 
-        'component-type' => array('get-case-study', 'get-case-study-video', 'get-case-study-sidebar', 'get-action-plan')
+        'component-type' => array('get-case-study', 'get-case-study-video', 'get-case-study-sidebar', 'get-action-plan', 'enter-the-contest-video')
       ) 
     ),
     'show_names' => true, // Show field names on the left
@@ -156,6 +156,32 @@ function cmb_sample_metaboxes( array $meta_boxes ) {
       array(
         'name' => 'Source Title',
         'id'   => $prefix . 'testimonial_source_title',
+        'type' => 'text'
+      )     
+    )
+  );
+      
+  $meta_boxes[] = array(
+    'id'         => 'Contest Testimonial Fields',
+    'title'      => 'Contest Testimonial',
+    'pages'      => array( 'contest_testimonial', ), // Post type
+    'context'    => 'normal',
+    'priority'   => 'low',
+    'show_names' => true, // Show field names on the left
+    'fields'     => array(
+      array(
+        'name' => 'Quotation',
+        'id'   => $prefix . 'contest_testimonial_quote',
+        'type' => 'textarea'
+      ),   
+      array(
+        'name' => 'Source Name',
+        'id'   => $prefix . 'contest_testimonial_source_name',
+        'type' => 'text'
+      ),    
+      array(
+        'name' => 'Source Title',
+        'id'   => $prefix . 'contest_testimonial_source_title',
         'type' => 'text'
       )     
     )
@@ -309,7 +335,7 @@ function cmb_sample_metaboxes( array $meta_boxes ) {
     'id'         => 'home_fields',
     'title'      => 'Home Page Custom Content',
     'pages'      => array( 'page', ), // Post type
-    'show_on'    => array( 'key' => 'page-template', 'value' => array('home-page.php', 'home-page-alt1.php', 'home-page-alt2.php' )),
+    'show_on'    => array( 'key' => 'page-template', 'value' => array('home-page.php', 'home-page-alt1.php', 'home-page-alt2.php', 'tour-page.php')),
     'context'    => 'normal',
     'priority'   => 'low',
     'show_names' => true, // Show field names on the left
@@ -411,6 +437,36 @@ function cmb_sample_metaboxes( array $meta_boxes ) {
       )   
     )
   );
+
+  $meta_boxes[] = array(
+    'id'         => 'contest_fields',
+    'title'      => 'Contest Page Custom Content',
+    'pages'      => array( 'page', ), // Post type
+    'show_on'    => array( 'key' => 'page-template', 'value' => array('contest-page.php')),
+    'context'    => 'normal',
+    'priority'   => 'low',
+    'show_names' => true, // Show field names on the left
+    'fields'     => array(
+      array(
+        'name' => 'Hero Section',
+        'desc' => 'Topmost section on contest page with video link',
+        'type' => 'title',
+        'id' => $prefix . 'contest_hero_title'
+      ),
+       array(
+        'name' => 'Hero Section Text',
+        'id'   => $prefix . 'contest_hero_text',
+        'type' => 'text'
+      ),
+      array(
+        'name' => 'Hero Section Video Embed Code',
+        'id'   => $prefix . 'contest_hero_video',
+        'type' => 'textarea_code'
+      )
+    )
+  );
+
+
 
   $meta_boxes[] = array(
     'id'         => 'podcast_archive_fields',

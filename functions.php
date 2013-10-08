@@ -20,6 +20,7 @@
     register_nav_menus(
       array( 
         'main-menu' => __( 'Main Menu' ),
+        'contest-menu' => __( 'Contest Menu' ),
         'footer-menu' => __( 'Footer Menu' )
       )
     );
@@ -27,7 +28,7 @@
   add_action( 'init', 'register_my_menus' );
 
   if ( function_exists( 'add_theme_support' ) ) { 
-    add_theme_support( 'post-thumbnails' , array('post', 'page', 'press-feature', 'case-study', 'testimonial', 'podcast', 'team-member', 'mentor', 'investor'));
+    add_theme_support( 'post-thumbnails' , array('post', 'page', 'press-feature', 'case-study', 'testimonial', 'contest_testimonial', 'podcast', 'team-member', 'mentor', 'investor'));
     set_post_thumbnail_size( 340, 340, true );
     add_image_size('case-study', 290, 170, true);
     add_image_size('testimonial', 70, 70, true);
@@ -194,6 +195,23 @@
         'labels' => array(
           'name' => __( 'Testimonials' ),
           'singular_name' => __( 'Testimonial' ),
+          'add_new_item' => "Add New Testimonial",
+          'edit_item' => "Edit Testimonial"
+        ),
+      'public' => false,
+      'show_ui' => true,
+      'capability_type' => 'post',
+      'hierarchical' => false,
+      'rewrite' => false,
+      'supports' => array('title', 'thumbnail'),
+      'query_var' => false
+      )
+    );
+    register_post_type( 'contest_testimonial',
+      array(
+        'labels' => array(
+          'name' => __( 'Contest Testimonials' ),
+          'singular_name' => __( 'Contest Testimonial' ),
           'add_new_item' => "Add New Testimonial",
           'edit_item' => "Edit Testimonial"
         ),

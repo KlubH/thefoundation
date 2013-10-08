@@ -247,4 +247,19 @@ $j(document).ready(function(){
   wistiaResize();
   wistiaiframe.load(wistiaResize);
   $(window).resize(wistiaResize)
+  
+  if ($('.countdown').length) {
+    var secondsLeft = $('.countdown').data('secondsleft');
+
+    window.setInterval(function () {
+      secondsLeft--;
+      if (secondsLeft > 0)
+      {
+        $('.counter.days em').text(Math.floor(secondsLeft / 86400));
+        $('.counter.hours em').text(Math.floor((secondsLeft % 86400) / 3600));
+        $('.counter.minutes em').text(Math.floor((secondsLeft % 3600) / 60));
+        $('.counter.seconds em').text(secondsLeft % 60);
+      }
+    }, 1000);
+  }
 });
