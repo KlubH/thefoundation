@@ -219,6 +219,9 @@ img {
   .content h1 {
     font-size: 25px;
   }
+  .blog-archive .post h1 a, .post-single h1 a, .blog-post h1 a {
+    color: $highlight;
+  }
   .hero {
     margin-top: 10px;
     h1 {
@@ -244,6 +247,12 @@ img {
   }
   .home .optin {
     width: 100%;
+  }
+  .comment-count {
+    padding-left: 0;
+    .right {
+      float: left;
+    }
   }
   .video-optin, .home-optin {
     h2 {
@@ -344,7 +353,6 @@ img {
       padding: 8px 13px !important;
     }
   }
-
 }
 @media screen and (max-width: 480px) {
   .site-footer li {
@@ -423,6 +431,20 @@ img {
   .post-single p, .blog-single p {
     font-size: 16px;
     line-height: 1.5;
+  }
+  .tour-page .home-optin {
+    background-color: #fffdf1;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 15px;
+    p {
+      width: 100%;
+    }
+    form {
+      background-color: transparent;
+      box-shadow: none;
+      padding: 0;
+    }
   }
 }
 

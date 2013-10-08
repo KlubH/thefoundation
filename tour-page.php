@@ -58,7 +58,7 @@ Template Name: Tour Page
   </div>
 
   <!-- @component OPTIN -->
-  <section class="container text center">
+  <section class="container text center tour-page">
     <h2 class="sep"><?php echo $headline_cta; ?></h2>
     <?php get_template_part('component', 'optin'); ?>
   </section>
