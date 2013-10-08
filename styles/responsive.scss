@@ -353,6 +353,13 @@ img {
       padding: 8px 13px !important;
     }
   }
+  .countdown {
+    font-size: 17px;
+    em {
+      padding: 8px 1px 8px 0;
+      width: 33px;
+    }
+  }
 }
 @media screen and (max-width: 480px) {
   .site-footer li {
@@ -363,6 +370,20 @@ img {
     .bordered-image {
       margin: 0 10px 10px 0;
       width: 85px;
+    }
+  }
+  .countdown {
+    .counter {
+      font-size: 13px;
+      font-weight: bold;
+    }
+    em {
+      padding: 5px 2px 5px 2px;
+      width: 20px;
+    }
+    .title {
+      display: block;
+      padding-bottom: 10px;
     }
   }
   .podcast-intro .pull-r, .podcast-intro .pull-l {
