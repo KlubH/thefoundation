@@ -4,9 +4,11 @@ Template Name: Home Page
 */
 ?>
 <?php get_header(); ?>
-
 <header class="site-header scroll-nav">
-  <?php get_template_part( 'nav' ); ?>
+  <nav class="site-nav container">      
+    <a class="logo pull-l" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
+    <a href="#" class="mobile-nav-toggle">Menu</a>
+  </nav>
 </header>
 
 <?php
@@ -22,10 +24,6 @@ Template Name: Home Page
     <!-- @component SITE HEADER | @component HERO -->
 
     <section class="hero container">
-      <div class="row">
-        <h1><?php echo $hero_text; ?></h1>
-      </div>
-
       <div id="video-modal" class="homepage-video">
         <?php echo $hero_video_link; ?>
       </div>
@@ -43,17 +41,17 @@ Template Name: Home Page
       $start_plusses = 83;
 
       function get_tweets($url) {
-        $json_string = file_get_contents('http://urls.api.twitter.com/1/urls/count.json?url=' . $url);
+        $json_string = @file_get_contents('http://urls.api.twitter.com/1/urls/count.json?url=' . $url);
         $json = json_decode($json_string, true);
         return intval( $json['count'] );
       }
       function get_likes($url) {
-        $json_string = file_get_contents('http://graph.facebook.com/?id=' . $url);
+        $json_string = @file_get_contents('http://graph.facebook.com/?id=' . $url);
         $json = json_decode($json_string, true);
         return intval( $json['likes'] );
       }
       function get_shares($url) {
-        $json_string = file_get_contents("http://graph.facebook.com/?id=" . $url);
+        $json_string = @file_get_contents("http://graph.facebook.com/?id=" . $url);
         $json = json_decode($json_string, true);
         return intval($json['shares']);
       }
@@ -72,7 +70,6 @@ Template Name: Home Page
 
       $link = get_permalink();
       $page = "thefoundation.com";
-
       $shares = get_shares($link) + $start_shares;
       $likes = get_likes($page) + $start_likes;
       $tweets = get_tweets($link) + $start_tweets;
@@ -126,12 +123,15 @@ Template Name: Home Page
       js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=122869331209455";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-    <div class="fb-comments" data-href="http://thefoundation.io/welcomegate/" data-width="500" data-num-posts="4" data-order-by="reverse_time"></div>
+    <div class="fb-comments" data-href="http://thefoundation.io/welcomegate/" data-width="500" data-num-posts="7" data-order-by="reverse_time"></div>
   <?php endif; ?>
 </section>
 
 <div class="grid-narrow">
-
+  <div class="about-box">
+    <h4>What Is The Foundation?</h4>
+    <p>An online mentoring program guiding entrepreneurs to start and scale software companies, from scratch, as quickly as possible. Even if they have no idea what to build, or any software experience at all. Students take our program virtually from all over the world.</p>
+  </div>
 <!-- @component TESTIMONIALS -->
   <div class="row testimonials text landing-testimonials">
   <?php
