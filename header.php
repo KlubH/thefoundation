@@ -3,13 +3,13 @@
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title><?php if (is_front_page()) { echo "Do You Know The Most Important Word In Business? | " . wp_title(" | ", false, right); echo bloginfo("name"); } else { echo wp_title('', false); echo " | "; echo bloginfo("name"); } ?></title>
+  <title><?php if (is_front_page()) { echo "Do You Know The Most Dangerous Word In Business? | " . wp_title(" | ", false, right); echo bloginfo("name"); } else { echo wp_title('', false); echo " | "; echo bloginfo("name"); } ?></title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:title" content="<?php if ( is_single() ) {
         single_post_title('', true); 
     } else {
-       echo 'Do you know the most important word in business?';
+       echo 'Do you know the most dangerous word in business?';
     }
     ?>">
   <meta property="og:url" content="<?php echo 'http://thefoundation.com'.$_SERVER['REQUEST_URI']; ?>">
@@ -26,7 +26,7 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <script type="text/javascript"src="<?php echo get_template_directory_uri(); ?>/scripts/selectivizr.min.js"></script>
   <![endif]-->
-  <!-- Start Visual Website Optimizer Asynchronous Code -->
+  <!-- Start Visual Website Optimizer Asynchronous Code --
   <script type='text/javascript'>
     var _vwo_code=(function(){
     var account_id=46536,
