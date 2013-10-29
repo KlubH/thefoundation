@@ -335,7 +335,7 @@ function cmb_sample_metaboxes( array $meta_boxes ) {
     'id'         => 'home_fields',
     'title'      => 'Home Page Custom Content',
     'pages'      => array( 'page', ), // Post type
-    'show_on'    => array( 'key' => 'page-template', 'value' => array('home-page.php', 'home-page-alt1.php', 'home-page-alt2.php', 'tour-page.php')),
+    'show_on'    => array( 'key' => 'page-template', 'value' => array('home-page.php', 'home-page-with-headline.php', 'home-page-alt1.php', 'home-page-alt2.php', 'tour-page.php')),
     'context'    => 'normal',
     'priority'   => 'low',
     'show_names' => true, // Show field names on the left
