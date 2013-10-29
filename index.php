@@ -18,7 +18,7 @@
         <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
         <p class="comment-count"><span class="right"><a href="<?php echo get_comments_link(); ?>">
           <?php if ($fb_comments_bool == "on") { ?>
-            <fb:comments-count href="<?php echo $fb_comments_link; ?>"></fb:comments-count>
+            <fb:comments-count href="<?php echo $fb_comments_link; ?>"></fb:comments-count> Comments
           <?php } else { ?>
             <?php comments_number( 'No comments yet', '1 comment', '% comments' ); ?>
           <?php } ?>
