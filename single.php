@@ -19,7 +19,13 @@
 
       <article class="post blog-post">
         <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-        <p class="comment-count no-margin"><span class="right"><a href="<?php echo get_comments_link(); ?>"><?php comments_number( 'No comments yet', '1 comment', '% comments' ); ?></a></span></p>
+        <p class="comment-count no-margin"><span class="right"><a href="<?php echo get_comments_link(); ?>">
+          <?php if ($fb_comments_bool == "on") { ?>
+            <fb:comments-count href="<?php echo $fb_comments_link; ?>"></fb:comments-count>
+          <?php } else { ?>
+            <?php comments_number( 'No comments yet', '1 comment', '% comments' ); ?>
+          <?php } ?>
+        </a></span></p>
         <p class="author-attribution">Post by <?php the_author(); ?></p>
         <div class="text">
           <?php the_content(""); ?>
