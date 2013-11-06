@@ -23,6 +23,7 @@
 			<h2><?php the_title(); ?></h2>
 			<?php echo $hero_video_link; ?>
 			<img src="<?php echo $partner_logos; ?>" />
+              <p style="text-align: center"> Note:  Not all of these partners are paid to promote us.  Some are just friends who believe in what we do. </p>
   		<?php endwhile; ?>
     	<?php endif; ?>
 	</div>
