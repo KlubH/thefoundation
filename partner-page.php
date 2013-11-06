@@ -26,6 +26,7 @@
   		<?php endwhile; ?>
     	<?php endif; ?>
 	</div>
+  <p style="text-align: center"> Note:  Not all of these partners are paid to promote us.  Some are just friends who believe in what we do. </p>
 
 	<div class="form center partners-form">
     <div class='moonray_forms moonray_affiliate_signup_form'>
